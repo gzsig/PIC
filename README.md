@@ -4,7 +4,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 
 ### Conteudo
 
-- [Projeto de Pesquisa](https://www.sugarsync.com/pf/D4503280_09675952_15076)
+- [Proposta  - Projeto de Pesquisa](https://www.sugarsync.com/pf/D4503280_09675952_15076)
 
 ### Referencias
 
