@@ -6,3 +6,4 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 
 - [Computação Quântica e o Apocalipse Criptográfico](http://www.serpro.gov.br/menu/noticias/noticias-2019/computacao-quantica-apocalipse-criptografico-parte-1)
 - [Google claims it has finally reached quantum supremacy](https://www.newscientist.com/article/2217347-google-claims-it-has-finally-reached-quantum-supremacy/)
+- [IME História do Computador](https://www.ime.usp.br/~macmulti/historico/)
