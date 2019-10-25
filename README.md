@@ -6,7 +6,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 *A história do computador e o potencial impacto dos computadores quânticos na sociedade*
 
 ### Orientador
-<img src="https://github.com/tech-espm/garby/blob/master/team/humberto.png" alt="photo"
+<img src="https://avatars3.githubusercontent.com/u/20843348?s=460&v=4" alt="photo"
 	title="Humberto Sandmann" width="100" height="100" />
  [Prof Dr. Humberto Sandmann](https://hsandmann.github.io)
 
