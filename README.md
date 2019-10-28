@@ -10,11 +10,11 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 	title="Humberto Sandmann" width="100" height="100" />
  [Prof Dr. Humberto Sandmann](https://hsandmann.github.io)
 
-### Conteudo
+### Conteúdo
 
 - [Proposta  - Projeto de Pesquisa](https://www.sugarsync.com/pf/D4503280_09675952_15076)
 
-### Referencias
+### Referências
 
 ##### Artigos
 
