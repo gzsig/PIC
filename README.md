@@ -21,6 +21,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [Computação Quântica e o Apocalipse Criptográfico](http://www.serpro.gov.br/menu/noticias/noticias-2019/computacao-quantica-apocalipse-criptografico-parte-1)
 - [How a quantum computer could break 2048-bit RSA encryption in 8 hours](https://www.technologyreview.com/s/613596/how-a-quantum-computer-could-break-2048-bit-rsa-encryption-in-8-hours/?utm_medium=tr_social&utm_campaign=site_visitor.unpaid.engagement&utm_source=LinkedIn#Echobox=1572026558)
 - [Google claims it has finally reached quantum supremacy](https://www.newscientist.com/article/2217347-google-claims-it-has-finally-reached-quantum-supremacy/)
+- [Quantum supremacy using a programmable superconducting processor](https://www.nature.com/articles/s41586-019-1666-5)
 - [Google claims its quantum computer can do the impossible in 200 seconds](https://edition.cnn.com/2019/10/23/tech/google-quantum-supremacy-scn/index.html)
 - [IBM casts doubt on Google’s claims of quantum supremacy](https://www.sciencemag.org/news/2019/10/ibm-casts-doubt-googles-claims-quantum-supremacy)
 
