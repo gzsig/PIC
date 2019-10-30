@@ -15,7 +15,9 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [Proposta  - Projeto de Pesquisa](https://www.sugarsync.com/pf/D4503280_09675952_15076)
 - [Carta de Recomendação](https://www.sugarsync.com/pf/D4503280_09675952_18372)
 
-### Time Line pré projeto
+### Time Lines 
+
+##### Pré-projeto
 
 |  Backlog     |      Doing      |  Done |
 |:-------------|:------:|:------:|
@@ -28,6 +30,11 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 |Currículo Lattes||📄|
 |Cópia do CPF e RG||📄|
 |Formulário de orçamento de materiais|||
+
+##### Projeto
+
+|  Backlog     |      Doing      |  Done |
+|:-------------|:------:|:------:|
 
 
 ### Referências
