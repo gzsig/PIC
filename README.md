@@ -19,22 +19,22 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 
 ##### Pré-projeto
 
-|  Backlog     |      Doing      |  Done |
-|:-------------|:------:|:------:|
-|Formulário pedido de bolsa|✍🏽||
-|Projeto de pesquisa|✍🏽||
-|Carta de recomendação|✍🏽||
-|Carta de anuência de orientação pela coordenação do curso|||
-|Termo de compromisso do candidato|||
-|Termo de compromisso do potencial orientador|||
-|Currículo Lattes||📄|
-|Cópia do CPF e RG||📄|
-|Formulário de orçamento de materiais|||
+|Backlog|Doing|Done|Finished Date|
+|:-------------|:------:|:------:|:------:|
+|Formulário pedido de bolsa|✍🏽|||
+|Projeto de pesquisa|✍🏽|||
+|Carta de recomendação|✍🏽|||
+|Carta de anuência de orientação pela coordenação do curso||||
+|Termo de compromisso do candidato|✍🏽|||
+|Termo de compromisso do potencial orientador||||
+|Currículo Lattes||📄|12/10/2019|
+|Cópia do CPF e RG||📄|15/10/2019|
+|Formulário de orçamento de materiais|✍🏽|||
 
 ##### Projeto
 
-|  Backlog     |      Doing      |  Done |
-|:-------------|:------:|:------:|
+|Backlog|Doing|Done|Finished Date|
+|:-------------|:------:|:------:|:------:|
 
 
 ### Referências
