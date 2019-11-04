@@ -24,7 +24,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 |Formulário pedido de bolsa|✍🏽|||
 |Projeto de pesquisa|✍🏽|||
 |Carta de recomendação|✍🏽|||
-|Carta de anuência de orientação pela coordenação do curso|✍🏽|||
+|Carta de anuência de orientação pela coordenação do curso||📄|04/11/2019|
 |Termo de compromisso do candidato||📄|03/11/2019|
 |Termo de compromisso do potencial orientador||📄|01/11/2019|
 |Currículo Lattes||📄|12/10/2019|
