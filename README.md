@@ -3,7 +3,7 @@
 O Programa de Iniciação Científica é voltado para o desenvolvimento do pensamento científico e iniciação à pesquisa de estudantes dos cursos de graduação do ensino superior. Consiste no desenvolvimento de uma pesquisa durante 12 meses, apoiado por um orientador, versando sobre tema de interesse comum entre estudante e professor.
 
 ## Pesquisa
-*A história do computador e o potencial impacto dos computadores quânticos na sociedade*
+*Computadores Clássicos e Quânticos: Estudos, Implementação, Simuladores e Impactos Sociais*
 
 ### Orientador
 <img src="https://avatars3.githubusercontent.com/u/20843348?s=460&v=4" alt="photo"
