@@ -47,6 +47,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [Quantum supremacy using a programmable superconducting processor](https://www.nature.com/articles/s41586-019-1666-5)
 - [Google claims its quantum computer can do the impossible in 200 seconds](https://edition.cnn.com/2019/10/23/tech/google-quantum-supremacy-scn/index.html)
 - [IBM casts doubt on Google’s claims of quantum supremacy](https://www.sciencemag.org/news/2019/10/ibm-casts-doubt-googles-claims-quantum-supremacy)
+- [Researchers create quantum chip 1,000 times smaller than current setups](https://phys.org/news/2019-10-quantum-chip-smaller-current-setups.html)
 
 ##### Conceitos
 
