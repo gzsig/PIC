@@ -13,7 +13,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 ### Conteúdo
 
 - [Proposta  - Projeto de Pesquisa](https://www.sugarsync.com/pf/D4503280_09675952_675971)
-- [Carta de Recomendação]()
+- [Carta de Recomendação](https://www.sugarsync.com/pf/D4503280_169_6733393122)
 
 ### Time Lines 
 
@@ -22,8 +22,8 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 |Backlog|Doing|Done|Finished Date|
 |:-------------|:------:|:------:|:------:|
 |Formulário pedido de bolsa||📄|04-11-2019|
-|Projeto de pesquisa|✍🏽|||
-|Carta de recomendação|✍🏽|||
+|Projeto de pesquisa||📄|06-11-2019|
+|Carta de recomendação||📄|06-11-2019|
 |Carta de anuência de orientação pela coordenação do curso||📄|04-11-2019|
 |Termo de compromisso do candidato||📄|03-11-2019|
 |Termo de compromisso do potencial orientador||📄|01-11-2019|
