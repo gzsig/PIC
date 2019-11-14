@@ -48,6 +48,14 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [Google claims its quantum computer can do the impossible in 200 seconds](https://edition.cnn.com/2019/10/23/tech/google-quantum-supremacy-scn/index.html)
 - [IBM casts doubt on Google’s claims of quantum supremacy](https://www.sciencemag.org/news/2019/10/ibm-casts-doubt-googles-claims-quantum-supremacy)
 - [Researchers create quantum chip 1,000 times smaller than current setups](https://phys.org/news/2019-10-quantum-chip-smaller-current-setups.html)
+- [Quantum computing](https://www.explainthatstuff.com/quantum-computing.html)
+- [The WIRED Guide to Quantum Computing](https://www.wired.com/story/wired-guide-to-quantum-computing/)
+- [Quantum Computing](https://www.explainingcomputers.com/quantum.html)
+
+
+##### Youtube
+- [How Does a Quantum Computer Work?](https://www.youtube.com/watch?v=g_IaVepNDT4)
+- [Quantum Computing for Dummies : A Simple Explanation for Normal People](https://www.youtube.com/watch?v=lypnkNm0B4A)
 
 ##### Conceitos
 
