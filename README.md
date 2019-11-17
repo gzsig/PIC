@@ -51,6 +51,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [Quantum computing](https://www.explainthatstuff.com/quantum-computing.html)
 - [The WIRED Guide to Quantum Computing](https://www.wired.com/story/wired-guide-to-quantum-computing/)
 - [Quantum Computing](https://www.explainingcomputers.com/quantum.html)
+- [Explainer: What is post-quantum cryptography?](https://www-technologyreview-com.cdn.ampproject.org/c/s/www.technologyreview.com/s/613946/explainer-what-is-post-quantum-cryptography/amp/)
 
 
 ##### Youtube
