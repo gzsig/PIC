@@ -52,11 +52,17 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [The WIRED Guide to Quantum Computing](https://www.wired.com/story/wired-guide-to-quantum-computing/)
 - [Quantum Computing](https://www.explainingcomputers.com/quantum.html)
 - [Explainer: What is post-quantum cryptography?](https://www-technologyreview-com.cdn.ampproject.org/c/s/www.technologyreview.com/s/613946/explainer-what-is-post-quantum-cryptography/amp/)
-
+- [O 1º voo da computação quântica](https://www1.folha.uol.com.br/colunas/marceloviana/2019/11/o-1o-voo-da-computacao-quantica.shtml)
 
 ##### Youtube
 - [How Does a Quantum Computer Work?](https://www.youtube.com/watch?v=g_IaVepNDT4)
 - [Quantum Computing for Dummies : A Simple Explanation for Normal People](https://www.youtube.com/watch?v=lypnkNm0B4A)
+- [Lunch & Learn: Quantum Computing](https://www.youtube.com/watch?v=7susESgnDv8)
+- [A Beginner’s Guide To Quantum Computing](https://www.youtube.com/watch?v=JRIPV0dPAd4&feature=youtu.be)
+- [How Quantum Computers Could Change the World](https://www.youtube.com/watch?v=kEJBxotcxRw&app=desktop)
+- [Quantum Computers - FULLY Explained!](https://www.youtube.com/watch?v=PzL-oXxNGVM)
+- [Quantum Theory Made Easy 2](https://www.youtube.com/watch?v=FlIrgE5T_g0&feature=youtu.be)
+- [What is Quantum Mechanical Superposition?](https://www.youtube.com/watch?v=3E3QT-QU0bw&feature=youtu.be)
 
 ##### Conceitos
 
