@@ -12,8 +12,8 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 
 ### Conteúdo
 
-- [Proposta  - Projeto de Pesquisa](https://www.sugarsync.com/pf/D4503280_09675952_675971)
-- [Carta de Recomendação](https://www.sugarsync.com/pf/D4503280_169_6733393122)
+- [Proposta  - Projeto de Pesquisa](https://drive.google.com/file/d/1Fj6oEMw1DZtSEohj1P5LZT-rMY8O65uG/view?usp=sharing)
+- [Carta de Recomendação](https://drive.google.com/file/d/1MXZkaBesbQW2g_WaWSG85M8X1Zsa3bWK/view?usp=sharing)
 
 ### Time Lines 
 
