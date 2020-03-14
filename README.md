@@ -55,6 +55,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [O 1º voo da computação quântica](https://www1.folha.uol.com.br/colunas/marceloviana/2019/11/o-1o-voo-da-computacao-quantica.shtml)
 
 ##### Youtube
+- [If You Don't Understand Quantum Physics, Try This!](https://www.youtube.com/watch?v=Usu9xZfabPM)
 - [How Does a Quantum Computer Work?](https://www.youtube.com/watch?v=g_IaVepNDT4)
 - [Quantum Computing for Dummies : A Simple Explanation for Normal People](https://www.youtube.com/watch?v=lypnkNm0B4A)
 - [Lunch & Learn: Quantum Computing](https://www.youtube.com/watch?v=7susESgnDv8)
