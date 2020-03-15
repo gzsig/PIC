@@ -39,20 +39,8 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 
 ### Referências
 
-##### Artigos
-
-- [Computação Quântica e o Apocalipse Criptográfico](http://www.serpro.gov.br/menu/noticias/noticias-2019/computacao-quantica-apocalipse-criptografico-parte-1)
-- [How a quantum computer could break 2048-bit RSA encryption in 8 hours](https://www.technologyreview.com/s/613596/how-a-quantum-computer-could-break-2048-bit-rsa-encryption-in-8-hours/?utm_medium=tr_social&utm_campaign=site_visitor.unpaid.engagement&utm_source=LinkedIn#Echobox=1572026558)
-- [Google claims it has finally reached quantum supremacy](https://www.newscientist.com/article/2217347-google-claims-it-has-finally-reached-quantum-supremacy/)
-- [Quantum supremacy using a programmable superconducting processor](https://www.nature.com/articles/s41586-019-1666-5)
-- [Google claims its quantum computer can do the impossible in 200 seconds](https://edition.cnn.com/2019/10/23/tech/google-quantum-supremacy-scn/index.html)
-- [IBM casts doubt on Google’s claims of quantum supremacy](https://www.sciencemag.org/news/2019/10/ibm-casts-doubt-googles-claims-quantum-supremacy)
-- [Researchers create quantum chip 1,000 times smaller than current setups](https://phys.org/news/2019-10-quantum-chip-smaller-current-setups.html)
-- [Quantum computing](https://www.explainthatstuff.com/quantum-computing.html)
-- [The WIRED Guide to Quantum Computing](https://www.wired.com/story/wired-guide-to-quantum-computing/)
-- [Quantum Computing](https://www.explainingcomputers.com/quantum.html)
-- [Explainer: What is post-quantum cryptography?](https://www-technologyreview-com.cdn.ampproject.org/c/s/www.technologyreview.com/s/613946/explainer-what-is-post-quantum-cryptography/amp/)
-- [O 1º voo da computação quântica](https://www1.folha.uol.com.br/colunas/marceloviana/2019/11/o-1o-voo-da-computacao-quantica.shtml)
+#### [Artigos Científicos](https://drive.google.com/drive/folders/10tr7DVBDXhUS95Yhtqn8QRnDtbjrO6oZ?usp=sharing)
+#### [Revistas/Jornais](https://drive.google.com/drive/folders/1tBOv73V5RPcxrWOQVBtOfLLAwgyqQ-u4?usp=sharing)
 
 ##### Youtube
 - [If You Don't Understand Quantum Physics, Try This!](https://www.youtube.com/watch?v=Usu9xZfabPM)
