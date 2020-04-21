@@ -36,6 +36,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 |Backlog|Doing|Done|Finished Date|
 |:-------------|:------:|:------:|:------:|
 |Email Andre Compras||📄|01/04/2020|
+|Comprar material|🖌|||
 |Conceitos teoricos física clássica & quântica|🖌|||
 |Conceitos de criptografia|🖌|||
 |Comerçar introdução|🖌|||
