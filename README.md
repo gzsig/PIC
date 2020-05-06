@@ -4,12 +4,7 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 
 ## Pesquisa
 *Computadores Clássicos e Quânticos: Estudos, Implementação, Simuladores e Impactos Sociais*
-
-### Orientador
-<img src="https://avatars3.githubusercontent.com/u/20843348?s=460&v=4" alt="photo"
-	title="Humberto Sandmann" width="100" height="100" />
- [Prof Dr. Humberto Sandmann](https://hsandmann.github.io)
-
+ 
 ### Conteúdo
 
 - [Proposta  - Projeto de Pesquisa](https://drive.google.com/file/d/1Fj6oEMw1DZtSEohj1P5LZT-rMY8O65uG/view?usp=sharing)
@@ -63,3 +58,8 @@ O Programa de Iniciação Científica é voltado para o desenvolvimento do pensa
 - [What is a Turing machine?](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html)
 - [Turing machine vs Von Neuman machine](https://stackoverflow.com/questions/2782014/turing-machine-vs-von-neuman-machine)
 - [IME História do Computador](https://www.ime.usp.br/~macmulti/historico/)
+
+ | <a href="https://www.linkedin.com/in/hsandmann/" target="_blank">**Prof Dr. Humberto Sandmann**</a> | <a href="https://www.linkedin.com/in/gzsig/" target="_blank">**Gabriel Zsigmond**</a> |
+| :---: |:---:|
+| [![Humberto](https://avatars3.githubusercontent.com/u/20843348?s=400&v=4)](https://hsandmann.github.io)    | [![Gabriel](https://avatars0.githubusercontent.com/u/45796046?s=400&u=0c756f32e5b3554fc112a7713b6421ba8e4edac0&v=4)](https://gzsig.io) |
+| <a href="https://github.com/hsandmann" target="_blank">`https://github.com/hsandmann`</a> | <a href="https://github.com/gzsig" target="_blank">`https://github.com/gzsig`</a> |
