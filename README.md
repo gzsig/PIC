@@ -20,25 +20,32 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 
 |Backlog|Doing|Done|Finished Date|
 |:-------------|:------:|:------:|:------:|
-|Formulário pedido de bolsa||📄|04-11-2019|
-|Projeto de pesquisa||📄|06-11-2019|
 |Carta de recomendação||📄|06-11-2019|
 |Carta de anuência de orientação pela coordenação do curso||📄|04-11-2019|
-|Termo de compromisso do candidato||📄|03-11-2019|
-|Termo de compromisso do potencial orientador||📄|01-11-2019|
 |Currículo Lattes||📄|12-10-2019|
 |Cópia do CPF e RG||📄|15-10-2019|
 |Formulário de orçamento de materiais||📄|05-11-2019|
+|Formulário pedido de bolsa||📄|04-11-2019|
+|Projeto de pesquisa||📄|06-11-2019|
+|Termo de compromisso do candidato||📄|03-11-2019|
+|Termo de compromisso do potencial orientador||📄|01-11-2019|
 
 ##### Projeto
 
 |Backlog|Doing|Done|Finished Date|
 |:-------------|:------:|:------:|:------:|
-|Email Andre Compras||📄|01/04/2020|
 |Comprar material|🖌|||
-|Conceitos teoricos física clássica & quântica|🖌|||
+|Conceitos teoricos física clássica|🖌|||
+|Conceitos teoricos física quântica|🖌|||
 |Conceitos de criptografia|🖌|||
-|Comerçar introdução|🖌|||
+|Email Andre Compras||📄|01/04/2020|
+|Impacto social||||
+|Introdução|🖌|||
+|Passar texto para Latex||📄|05/05/2020|
+|Protótipo||||
+|Web App||||
+
+
 
 
 ### Referências
