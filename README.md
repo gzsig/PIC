@@ -36,7 +36,7 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 
 | Backlog                            | Doing | Done | Finished Date |
 | :--------------------------------- | :---: | :--: | :-----------: |
-| Comprar material                   |   🖌   |      |               |
+| Comprar material                   |       |  📄  |  15/05/2020   |
 | Conceitos teoricos física clássica |   🖌   |      |               |
 | Conceitos teoricos física quântica |   🖌   |      |               |
 | Conceitos de criptografia          |   🖌   |      |               |
@@ -44,7 +44,7 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 | Impacto social                     |       |      |               |
 | Introdução                         |   🖌   |      |               |
 | Passar texto para Latex            |       |  📄  |  05/05/2020   |
-| Protótipo                          |       |      |               |
+| Protótipo                          |   🖌   |      |  16/05/2020   |
 | Web App                            |       |      |               |
 
 ### Referências
@@ -71,7 +71,7 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 - [Turing machine vs Von Neuman machine](https://stackoverflow.com/questions/2782014/turing-machine-vs-von-neuman-machine)
 - [IME História do Computador](https://www.ime.usp.br/~macmulti/historico/)
 
-|   <a href="https://www.linkedin.com/in/hsandmann/" target="_blank">**Prof Dr. Humberto Sandmann**</a>   |                         <a href="https://www.linkedin.com/in/gzsig/" target="_blank">**Gabriel Zsigmond**</a>                          |
-| :-----------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
-| [![Humberto](https://avatars3.githubusercontent.com/u/20843348?s=400&v=4)](https://hsandmann.github.io) | [![Gabriel](https://avatars0.githubusercontent.com/u/45796046?s=400&u=0c756f32e5b3554fc112a7713b6421ba8e4edac0&v=4)](https://gzsig.io) |
-|        <a href="https://github.com/hsandmann" target="_blank">`https://github.com/hsandmann`</a>        |                           <a href="https://github.com/gzsig" target="_blank">`https://github.com/gzsig`</a>                            |
+|                         <a href="https://www.linkedin.com/in/gzsig/" target="_blank">**Gabriel Zsigmond**</a>                          |   <a href="https://www.linkedin.com/in/hsandmann/" target="_blank">**Prof Dr. Humberto Sandmann**</a>   |
+| :------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
+| [![Gabriel](https://avatars0.githubusercontent.com/u/45796046?s=400&u=0c756f32e5b3554fc112a7713b6421ba8e4edac0&v=4)](https://gzsig.io) | [![Humberto](https://avatars3.githubusercontent.com/u/20843348?s=400&v=4)](https://hsandmann.github.io) |
+|                           <a href="https://github.com/gzsig" target="_blank">`https://github.com/gzsig`</a>                            |        <a href="https://github.com/hsandmann" target="_blank">`https://github.com/hsandmann`</a>        |
