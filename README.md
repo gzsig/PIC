@@ -49,9 +49,15 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 
 ### Referências
 
-#### [Artigos Científicos](https://drive.google.com/drive/folders/10tr7DVBDXhUS95Yhtqn8QRnDtbjrO6oZ?usp=sharing)
+#### Ben Eater
+- [Build an 8-bit computer from scratch](https://eater.net/8bit)
+- [youtube playlist](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU)
 
-#### [Revistas/Jornais](https://drive.google.com/drive/folders/1tBOv73V5RPcxrWOQVBtOfLLAwgyqQ-u4?usp=sharing)
+#### Leituras
+
+- [Artigos Científicos](https://drive.google.com/drive/folders/10tr7DVBDXhUS95Yhtqn8QRnDtbjrO6oZ?usp=sharing)
+
+- [Revistas/Jornais](https://drive.google.com/drive/folders/1tBOv73V5RPcxrWOQVBtOfLLAwgyqQ-u4?usp=sharing)
 
 ##### Youtube
 
