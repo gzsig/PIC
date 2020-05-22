@@ -1,15 +1,49 @@
+% document type
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
+% language
 \usepackage[portuguese]{babel}
+% font family
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
+% line spacing
 \linespread{1.5} 
+% always indent paragraph
 \usepackage{indentfirst}
+% footnote always at end of page
 \usepackage[bottom]{footmisc}
+% clicable links
+\usepackage{hyperref}
+%define colors
+\usepackage[dvipsnames]{xcolor}
+\newcommand\myshade{}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{YellowOrange}
+\colorlet{myurlcolor}{blue}
+\colorlet{myfootnotecolor}{Aquamarine}
+% set color for each type of link
+\hypersetup{
+  colorlinks = true,
+  citecolor  = mycitecolor!\myshade!black,
+  linkcolor  = mylinkcolor!\myshade!black,
+  urlcolor   = myurlcolor!\myshade!black,
+}
+% set color for footnotes
+\makeatletter
+\newcommand{\org@footnotemark}{}
+\let\org@footnotemark\@footnotemark
+\def\@footnotemark{
+  \begingroup
+    \hypersetup{linkcolor=myfootnotecolor!\myshade!black}
+    \org@footnotemark
+  \endgroup
+}
+\makeatother
+% package to include images
 \usepackage[pass]{geometry}
 \usepackage{graphicx}
 \graphicspath{{images/}}
-
+% title for table of contents
 \addto\captionsportuguese{
   \renewcommand{\contentsname}
     {Sumário}
