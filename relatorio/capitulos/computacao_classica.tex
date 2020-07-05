@@ -46,7 +46,34 @@ Alan Turing, Matemático inglês, cientista da computação, lógico, criptoanal
 
 O mecanismo abstrato descrito no artigo de Turing fornece os conceitos fundamentais de computadores que outros engenheiros conceberam posteriormente. Na sua essência, uma Máquina de Turing é um dispositivo que manipula símbolos em uma tira de fita de acordo com uma tabela de regras. Forneceu formalização dos conceitos de “algoritmo” e “computação” na infância da ciência da computação. Apesar de sua simplicidade, uma Máquina de Turing pode ser adaptada para simular a lógica de qualquer algoritmo de computador e é útil para explicar as funções de uma CPU.
 
-Turing é identificado não apenas como o pai da ciência da computação, mas também como o pai do computador clássico. O fundamento para isso é o seguinte, a planta do computador moderno pode ser encontrada no projeto EDVAC de von Neumann \cite{9} e hoje os computadores clássicos são geralmente descritos como tendo a chamada arquitetura de von Neumann. Uma idéia fundamental do design do EDVAC é a idéia de programa armazenado. Isso significa o armazenamento de instruções e dados na mesma memória, permitindo a manipulação de programas como dados. Existem razões para supor que von Neumann conhecia os principais resultados do trabalho de Turing \cite{10}. Assim, alguém poderia argumentar que o conceito de programa armazenado se origina da noção de máquina de Turing universal de Turing e, destacando isso como a característica definidora do computador clássico, alguns podem alegar que Turing é o pai do computador até o estado da arte. Outro argumento relacionado é que Turing foi o primeiro a explorar a idéia de uma máquina de uso geral por meio de sua noção de máquina universal e que, nesse sentido, ele também "inventou" o computador moderno. Esse argumento é reforçado pelo fato de que Turing também estava envolvido na construção de uma classe importante de dispositivos de computação (o Bombe) usado para descriptografar o código alemão Enigma e, posteriormente, propôs o design do ACE (Automatic Computing Engine), explicitamente explicado. identificado como um tipo de realização física da máquina universal pelo próprio Turing:
+Turing é identificado não apenas como o pai da ciência da computação, mas também como o pai do computador clássico. O fundamento para isso é o seguinte, o diagrama do computador moderno pode ser encontrada no projeto EDVAC de Von Neumann \cite{9} e hoje os computadores clássicos são geralmente descritos como tendo a chamada arquitetura de Von Neumann. Uma idéia fundamental do design do EDVAC é a idéia de programa armazenado. Isso significa o armazenamento de instruções e dados na mesma memória, permitindo a manipulação de programas como dados. Existem razões para supor que Von Neumann conhecia os principais resultados do trabalho de Turing \cite{10}. Assim, pode-se argumentar que o conceito de programa armazenado se origina da noção de máquina de Turing e, destacando isso como a característica definidora do computador clássico, alguns podem alegar que Turing é o pai do computador até o estado da arte. Outro argumento relacionado é que Turing foi o primeiro a explorar a idéia de uma máquina de uso geral por meio de sua noção de máquina universal e que, nesse sentido, ele também “inventou” o computador moderno. Esse argumento é reforçado pelo fato de que Turing também estava envolvido na construção de uma classe importante de dispositivos de computação, o Bombe \footnote{um dispositivo eletromecânico usado pelos criptologistas britânicos para ajudar a decifrar as mensagens secretas criptografadas pela máquina alemã Enigma durante a Segunda Guerra Mundial.}. Posteriormente, ele propôs o design do ACE (Automatic Computing Engine), explicitamente explicado. identificado como um tipo de realização física da máquina universal pelo próprio Turing:
 
-``Some years ago I was researching on what might now be described as an investigation of the theoretical possibilities and limitations of digital computing machines. […] Machines such as the ACE may be regarded as practical versions of this same type of machine. (Turing 1947)''
+\textit{
+  ``Some years ago I was researching on what might now be described as an investigation of the theoretical possibilities and limitations of digital computing machines. […] Machines such as the ACE may be regarded as practical versions of this same type of machine.'' \cite{11}
+}
+
+Baseando na teoria da máquina de Turing, o físico e matemático John von Neumann desenvolveu uma arquitetura que era capaz de executar tais tarefas.
+
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{von_neumann_architecture}}
+  \caption{\label{fig:1} Diagrama arquitetura de Von Neumann} 
+\end{figure}
+
+Nessa arquitetura, o cabeçalho passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construidas e executadas em circuitos formados por portas logicas  chamado ALU (Arithmetic/Logic Unit). \cite{12}
+
+Atualmente, a maioria dos computadores modernos são construídos sobre a praxis da arquitetura von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o \href{https://gzsig.io/vm-24bits/}{ASM 24bits} este apresenta as principais características de um processador moderno e permite a sua programação utilizando um Assembly de 20 instruções, sua \href{https://github.com/gzsig/Asm/blob/master/README.md}{Documentação}. Similar à arquitetura de von Neumann esse emulador é composto por memória e CPU.
+
+
+\begin{tabular}{ |p{3cm}||p{9cm}|  }
+  \hline
+  \multicolumn{2}{|c|}{Registradores} \\
+  \hline
+    Nome &Descrição\\
+  \hline
+    Accumulator (ACC) &Este é o registro mais usado para armazenar dados extraídos da memória. Está em diferentes números em diferentes microprocessadores.\\
+  \hline
+    Instruction Register (IR) &É o registro que contém a instrução que está sendo executada atualmente.\\
+  \hline
+\end{tabular}
+
 \newpage
