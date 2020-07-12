@@ -22,10 +22,10 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 
 | Backlog                                                   | Doing | Done | Finished Date |
 | :-------------------------------------------------------- | :---: | :--: | :-----------: |
-| Carta de recomendação                                     |       |  📄  |  06-11-2019   |
 | Carta de anuência de orientação pela coordenação do curso |       |  📄  |  04-11-2019   |
-| Currículo Lattes                                          |       |  📄  |  12-10-2019   |
+| Carta de recomendação                                     |       |  📄  |  06-11-2019   |
 | Cópia do CPF e RG                                         |       |  📄  |  15-10-2019   |
+| Currículo Lattes                                          |       |  📄  |  12-10-2019   |
 | Formulário de orçamento de materiais                      |       |  📄  |  05-11-2019   |
 | Formulário pedido de bolsa                                |       |  📄  |  04-11-2019   |
 | Projeto de pesquisa                                       |       |  📄  |  06-11-2019   |
@@ -37,9 +37,9 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 | Backlog                            | Doing | Done | Finished Date |
 | :--------------------------------- | :---: | :--: | :-----------: |
 | Comprar material                   |       |  📄  |  15/05/2020   |
-| Conceitos teoricos física clássica |   🖌   |      |               |
-| Conceitos teoricos física quântica |   🖌   |      |               |
 | Conceitos de criptografia          |   🖌   |      |               |
+| Conceitos teóricos física clássica |   🖌   |      |               |
+| Conceitos teóricos física quântica |       |      |               |
 | Email Andre Compras                |       |  📄  |  01/04/2020   |
 | Impacto social                     |       |      |               |
 | Introdução                         |   🖌   |      |               |
@@ -50,6 +50,7 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 ### Referências
 
 #### Ben Eater
+
 - [Build an 8-bit computer from scratch](https://eater.net/8bit)
 - [youtube playlist](https://www.youtube.com/playlist?list=PLowKtXNTBypGqImE405J2565dvjafglHU)
 
