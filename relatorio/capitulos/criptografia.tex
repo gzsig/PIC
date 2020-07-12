@@ -1,4 +1,51 @@
 \section{Criptografia}
+Conforme definido por Bruce Schneier \textit{``The art and science of keeping messages secure is cryptography […].''} \cite{13} Embora a criptografia é considerada fundamental em nossas vidas digitais, não está especificamente relacionada à computação. Ele existe em diversas formas há milênios.
+
+Na segurança cibernética, há uma série de coisas com as quais nos preocupamos quando se trata de dados. Isso inclui confidencialidade, integridade, disponibilidade e não repúdio.
+
+\textbf{Confidencialidade} significa que nossos dados não podem ser acessados / lidos por usuários não autorizados.
+
+\textbf{Integridade} significa que nossos dados chegam a nós 100\% intactos e não foram modificados, seja por um ator malicioso, perda de dados ou outros.
+
+\textbf{Disponibilidade} significa que nossos dados estão acessíveis quando necessário.
+
+\textbf{Não-repúdio} significa que, se Bob enviar alguns dados para Mary, ele não poderá alegar mais tarde que não era, de fato, o remetente dessa informação. Em outras palavras, existe uma maneira de determinar que ninguém além de Bob poderia ter enviado os dados.
+
+A criptografia não faz muito por nós no que diz respeito à disponibilidade, mas examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os outros três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos a um dos seguintes:
+\begin{enumerate}
+  \item Criptografia simétrica
+  \item Criptografia assimétrica
+  \item Funções de hash
+  \item Assinaturas digitais
+\end{enumerate}
+
+Esses conceitos serão explicados e exemplificados na próxima secção.
 \subsection{Conceitos básicos de criptografia}
+Antes de mergulharmos nisso: o que exatamente queremos dizer com "criptografia"? Criptografar e descriptografar são normalmente usadas para significar criptografia e decifração, respectivamente; Para simplificar, criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis mais uma vez.
+
+\subsubsection{Criptografia simétrica}
+Para criptografar e descriptografar corretamente nossos dados, precisamos dos dados e de uma chave (que determina a saída da nossa cifra).
+Com a criptografia simétrica, a chave usada para criptografar e descriptografar dados é a mesma.
+
+\subsubsection{Criptografia assimétrica}
+O problema da criptografia simétrica é o seguinte: E se eu precisar enviar dados com segurança em um ambiente hostil, como a Internet? Se a mesma chave for usada para criptografar e descriptografar dados, primeiro eu precisaria enviar a chave de descriptografia para estabelecer uma conexão segura. Mas isso significa que estou enviando a chave por uma conexão insegura, o que significa que a chave pode ser interceptada e usada por terceiros! Como contornar isso? 
+
+Para exemplificar, usaremos um cadeado que possui três estados: A (bloqueado), B (desbloqueado) e C (bloqueado).
+E tem duas chaves distintas. A primeiro pode girar apenas no sentido horário (de A a B a C) e a segunda pode girar apenas no sentido anti-horário (de C a B a A).
+
+Ao criptografar uma mensagem, o usuário pega a primeira chave e guarda para si mesmo. Essa chave, sua chave "privada" - porque apenas ele a possui.
+
+A segunda chave, sua chave “pública”: Pode ser distribuida para qualquer pessoa. Assim, o usuário tem sua chave privada que pode mudar de A para B para C. E todo os outros tem sua chave pública que pode mudar de C para B para A.
+
+Colocando isso em pratica, imagine que você queira enviar um documento privado para o usuario. Você coloca o documento na caixa e usa uma cópia da chave pública dele para bloqueá-lo. Lembre-se de que a chave pública dele gira apenas no sentido anti-horário, e você a coloca na posição A. Agora a caixa está bloqueada. A única chave que pode passar de A para B é a chave privada, a que ele guardou para si.
+
+\subsubsection{Funções de hash}
+Uma função de hash, diferente da criptografia simétrica / assimétrica, é uma função unidirecional. Você pode criar um hash a partir de alguns dados, mas não há como reverter o processo. Como tal, não é uma maneira útil de armazenar dados, mas é uma maneira útil de verificar a integridade de alguns dados.
+Uma função de hash recebe alguns dados como entrada e gera uma string aparentemente aleatória (mas nem tanto) que sempre terá o mesmo comprimento. Uma função de hash ideal cria valores exclusivos para diferentes entradas. A mesma entrada exata sempre produzirá exatamente o mesmo hash - e é por isso que podemos usá-la para verificar a integridade dos dados.
+
+\subsubsection{Assinaturas digitais}
+As assinaturas digitais são ótimas tanto para integridade quanto para não repúdio. Uma assinatura digital é uma combinação de hash e criptografia assimétrica. Ou seja, uma mensagem é o primeiro hash e esse hash é criptografado com a chave privada do remetente. Isso constitui a assinatura, que é enviada junto com a mensagem.
+O destinatário usa a chave pública do remetente para extrair o hash da assinatura e a mensagem é hash para comparar com o hash extraído. Se você tiver certeza de que a chave pública pertence ao remetente e a descriptografia da chave pública for bem-sucedida, pode ter certeza de que a mensagem realmente veio do remetente. Se o hash extraído corresponder ao hash computado da mensagem, você pode ter certeza da integridade da mensagem.
+
 \subsection{Criptografia aplicada computação clássica}
 \subsection{Criptografia aplicada computação quântica}
