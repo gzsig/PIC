@@ -49,7 +49,7 @@ Colocando isso em pratica, imagine que você queira enviar um documento privado 
 Uma função de hash, diferente da criptografia simétrica / assimétrica, é uma função unidirecional. Você pode criar um hash a partir de alguns dados, mas não há como reverter o processo. Como tal, não é uma maneira útil de armazenar dados, mas é uma maneira útil de verificar a integridade de alguns dados.
 Uma função de hash recebe alguns dados como entrada e gera uma string aparentemente aleatória (mas nem tanto) que sempre terá o mesmo comprimento. Uma função de hash ideal cria valores exclusivos para diferentes entradas. A mesma entrada exata sempre produzirá exatamente o mesmo hash - e é por isso que podemos usá-la para verificar a integridade dos dados.
 
-\subsection{Rivest Shamir Adleman – RSA}
+\subsection{Rivest Shamir Adleman – RSA Criando chave publica e privada}
 
 \vspace{1cm}
 \begin{longtable}{ |p{6cm}|| p{8cm}|  }
@@ -102,6 +102,39 @@ Uma função de hash recebe alguns dados como entrada e gera uma string aparente
   Chave privada & 
   \[(11, 14)\]\\
 \hline
+\end{longtable}
+
+\vspace{1cm}
+\begin{longtable}{ |p{6cm}|| p{8cm}|  }
+  \hline
+  \multicolumn{2}{|c|}{RSA – Cryptosystem} \\
+  \hline
+    Descrição & matemática\\
+  \hline
+    Criptografar \newline
+    Chave publica: $(5, 14)$ \newline
+    mensagem: ``B'' 
+    \[A \to 1\]
+    \[B \to 2\]
+    \[C \to 3\]
+    \[D \to 4\] & 
+    \[2^5(mod 14)\]
+    \[32(mod 14)\]
+    \[4(mod 14)\]
+    Mensagem criptografada: 4 $\to$ D\\
+  \hline
+    Descriptografar \newline
+    Chave privada: $(11, 14)$ \newline
+    mensagem: ``D'' 
+    \[A \to 1\]
+    \[B \to 2\]
+    \[C \to 3\]
+    \[D \to 4\] & 
+    \[4^{11}(mod 14)\]
+    \[4194304(mod 14)\]
+    \[2(mod 14)\]
+    Mensagem original: 2 $\to$ B\\
+  \hline
 \end{longtable}
 
 \subsection{Criptografia aplicada computação clássica}
