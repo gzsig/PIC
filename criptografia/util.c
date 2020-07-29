@@ -1,4 +1,6 @@
 #include <math.h>
+#include <time.h>
+#include <errno.h>
 #include "util.h"
 
 #define new_max(x, y) ((x) >= (y)) ? (x) : (y)
@@ -28,6 +30,11 @@ int randomNumber(int min_num, int max_num)
   return result;
 }
 
+/**
+ *  Returns the greatest common denominator of the inputted pair pair
+ * @param num1 
+ * @param num1 
+ */
 int getGCDByModulus(int num1, int num2)
 {
   while (num1 != 0 && num2 != 0)
@@ -38,4 +45,27 @@ int getGCDByModulus(int num1, int num2)
       num2 %= num1;
   }
   return new_max(num1, num2);
+}
+
+/* msleep(): Sleep for the requested number of milliseconds. */
+int msleep(long msec)
+{
+  struct timespec ts;
+  int res;
+
+  if (msec < 0)
+  {
+    errno = EINVAL;
+    return -1;
+  }
+
+  ts.tv_sec = msec / 1000;
+  ts.tv_nsec = (msec % 1000) * 1000000;
+
+  do
+  {
+    res = nanosleep(&ts, &ts);
+  } while (res && errno == EINTR);
+
+  return res;
 }
