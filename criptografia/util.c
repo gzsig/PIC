@@ -27,3 +27,15 @@ int randomNumber(int min_num, int max_num)
   result = (rand() % (hi_num - low_num)) + low_num;
   return result;
 }
+
+int getGCDByModulus(int num1, int num2)
+{
+  while (num1 != 0 && num2 != 0)
+  {
+    if (num1 > num2)
+      num1 %= num2;
+    else
+      num2 %= num1;
+  }
+  return new_max(num1, num2);
+}
