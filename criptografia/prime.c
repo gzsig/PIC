@@ -2,6 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include "prime.h"
+#include "util.c"
 
 /**
  * Checks if number is prime, return 1 if true 0 if false
@@ -81,27 +82,7 @@ int randPrime()
   return -1;
 }
 
-/**
- * Generates a random number inside range
- * @param min_num 
- * @param max_num 
- */
-int randomNumber(int min_num, int max_num)
+int coprime(int num1, int num2)
 {
-  int result = 0, low_num = 0, hi_num = 0;
-
-  if (min_num < max_num)
-  {
-    low_num = min_num;
-    hi_num = max_num + 1; // include max_num in output
-  }
-  else
-  {
-    low_num = max_num + 1; // include max_num in output
-    hi_num = min_num;
-  }
-
-  srand(time(NULL));
-  result = (rand() % (hi_num - low_num)) + low_num;
-  return result;
+  return getGCDByModulus(num1, num2) == 1;
 }
