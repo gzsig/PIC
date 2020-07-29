@@ -40,10 +40,11 @@ int isPrime(int number)
  */
 int randPrime()
 {
-  int max = 1000, min = 1, rand;
+  int max = 20, min = 1, rand;
   rand = randomNumber(min, max);
   if (isPrime(rand))
   {
+    printf("The selected prime number is: %d\n", rand);
     return rand;
   }
   int i = rand - 1, j = rand + 1;
@@ -51,10 +52,12 @@ int randPrime()
   {
     if (isPrime(i))
     {
+      printf("The selected prime number is: %d\n", i);
       return i;
     }
     if (isPrime(j))
     {
+      printf("The selected prime number is: %d\n", j);
       return j;
     }
     i--;
@@ -65,6 +68,7 @@ int randPrime()
   {
     if (isPrime(i))
     {
+      printf("The selected prime number is: %d\n", i);
       return i;
     }
     i--;
@@ -74,14 +78,20 @@ int randPrime()
   {
     if (isPrime(j))
     {
+      printf("The selected prime number is: %d\n", j);
       return j;
     }
     j++;
   }
-
+  printf("No prime number found");
   return -1;
 }
 
+/**
+ *  Returns 1 if the inputted numbers are coprime and 0 if not
+ * @param num1 
+ * @param num1 
+ */
 int coprime(int num1, int num2)
 {
   return getGCDByModulus(num1, num2) == 1;
