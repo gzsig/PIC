@@ -1,3 +1,10 @@
+<style>
+.avatar {
+  border-radius: 8px;
+  box-shadow: 1px 4px 15px #d2d2d2
+}
+</style>
+
 # Projeto de Iniciação Científica
 
 O Programa de Iniciação Científica é voltado para o desenvolvimento do pensamento científico e iniciação à pesquisa de estudantes dos cursos de graduação do ensino superior. Consiste no desenvolvimento de uma pesquisa durante 12 meses, apoiado por um orientador, versando sobre tema de interesse comum entre estudante e professor.
@@ -36,18 +43,19 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 
 | Backlog                            | Doing | Done | Finished Date |
 | :--------------------------------- | :---: | :--: | :-----------: |
-| Comprar material                   |       |  📄  |  15/05/2020   |
+| Aplicação RSA                      |   🖌   |      |               |
+| Comprar material                   |       |  📄  |  15-05-2020   |
 | Conceitos de criptografia          |   🖌   |      |               |
 | Conceitos teóricos física clássica |   🖌   |      |               |
 | Conceitos teóricos física quântica |       |      |               |
-| Email Andre Compras                |       |  📄  |  01/04/2020   |
+| Email Andre Compras                |       |  📄  |  01-04-2020   |
 | Impacto social                     |       |      |               |
 | Introdução                         |   🖌   |      |               |
-| Passar texto para Latex            |       |  📄  |  05/05/2020   |
-| Protótipo                          |   🖌   |      |  16/05/2020   |
+| Passar texto para Latex            |       |  📄  |  05-05-2020   |
+| Protótipo                          |   🖌   |      |  16-05-2020   |
 | Web App                            |       |      |               |
 
-### Referências
+<!-- ### Referências
 
 #### Ben Eater
 
@@ -76,9 +84,9 @@ O presente projeto de pesquisa, "Computadores Clássicos e Quânticos: Estudos, 
 
 - [What is a Turing machine?](https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/turing-machine/one.html)
 - [Turing machine vs Von Neuman machine](https://stackoverflow.com/questions/2782014/turing-machine-vs-von-neuman-machine)
-- [IME História do Computador](https://www.ime.usp.br/~macmulti/historico/)
+- [IME História do Computador](https://www.ime.usp.br/~macmulti/historico/) -->
 
-|                         <a href="https://www.linkedin.com/in/gzsig/" target="_blank">**Gabriel Zsigmond**</a>                          |   <a href="https://www.linkedin.com/in/hsandmann/" target="_blank">**Prof Dr. Humberto Sandmann**</a>   |
-| :------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------: |
-| [![Gabriel](https://avatars0.githubusercontent.com/u/45796046?s=400&u=0c756f32e5b3554fc112a7713b6421ba8e4edac0&v=4)](https://gzsig.io) | [![Humberto](https://avatars3.githubusercontent.com/u/20843348?s=400&v=4)](https://hsandmann.github.io) |
-|                           <a href="https://github.com/gzsig" target="_blank">`https://github.com/gzsig`</a>                            |        <a href="https://github.com/hsandmann" target="_blank">`https://github.com/hsandmann`</a>        |
+|                             <a href="https://www.linkedin.com/in/gzsig/" target="_blank">**Gabriel Zsigmond**</a>                              | <a href="https://www.linkedin.com/in/hsandmann/" target="_blank">**Prof Dr. Humberto Sandmann**</a> |
+| :--------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------: |
+| <img class="avatar" src="https://avatars0.githubusercontent.com/u/45796046?s=400&u=0c756f32e5b3554fc112a7713b6421ba8e4edac0&v=4" width="200"/> | <img class="avatar" src="https://avatars3.githubusercontent.com/u/20843348?s=400&v=4" width="200"/> |
+|                               <a href="https://github.com/gzsig" target="_blank">`https://github.com/gzsig`</a>                                |      <a href="https://github.com/hsandmann" target="_blank">`https://github.com/hsandmann`</a>      |
