@@ -9,9 +9,9 @@ Na segurança cibernética, há uma série de coisas com as quais nos preocupamo
 
 \textbf{Disponibilidade} significa que nossos dados estão acessíveis quando necessário.
 
-\textbf{Não-repúdio} significa que, se Bob enviar alguns dados para Mary, ele não poderá alegar mais tarde que não era, de fato, o remetente dessa informação. Em outras palavras, existe uma maneira de determinar que ninguém além de Bob poderia ter enviado os dados.
+\textbf{Não-repúdio} significa que, se um sujeito enviar alguns dados para outro, ele não poderá alegar mais tarde que não era, de fato, o remetente dessa informação. Em outras palavras, existe uma maneira de determinar que ninguém além de ele próprio poderia ter enviado os dados.
 
-A criptografia não faz muito por nós no que diz respeito à disponibilidade, mas examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os outros três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos a um dos seguintes:
+Examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos a um dos seguintes:
 \begin{enumerate}
   \item Criptografia simétrica
   \item Criptografia assimétrica
@@ -50,6 +50,30 @@ Uma função de hash, diferente da criptografia simétrica / assimétrica, é um
 Uma função de hash recebe alguns dados como entrada e gera uma string aparentemente aleatória (mas nem tanto) que sempre terá o mesmo comprimento. Uma função de hash ideal cria valores exclusivos para diferentes entradas. A mesma entrada exata sempre produzirá exatamente o mesmo hash - e é por isso que podemos usá-la para verificar a integridade dos dados.
 
 \subsection{Rivest Shamir Adleman – RSA Criando chave publica e privada}
+
+\begin{algorithm}[H]
+  \SetAlgoLined
+  \KwResult{Write here the result }
+   $p\prime$
+   \newline
+   $q\prime$
+   \newline
+   $n = p * q$
+   \newline
+   $\Phi(n)=(p-1)(q-1)$
+   \newline
+   initialization\;
+   \While{While condition}{
+    instructions\;
+    \eIf{condition}{
+     instructions1\;
+     instructions2\;
+     }{
+     instructions3\;
+    }
+   }
+   \caption{How to write algorithms}
+  \end{algorithm}
 
 \vspace{1cm}
 \begin{longtable}{ |p{6cm}|| p{8cm}|  }
