@@ -61,19 +61,63 @@ Baseando na teoria da máquina de Turing, o físico e matemático John von Neuma
 
 Nessa arquitetura, o cabeçalho passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construidas e executadas em circuitos formados por portas logicas  chamado ALU (Arithmetic/Logic Unit). \cite{12}
 
-Atualmente, a maioria dos computadores modernos são construídos sobre a praxis da arquitetura von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o \href{https://gzsig.io/vm-24bits/}{ASM 24bits} este apresenta as principais características de um processador moderno e permite a sua programação utilizando um Assembly de 20 instruções, sua \href{https://github.com/gzsig/Asm/blob/master/README.md}{Documentação}. Similar à arquitetura de von Neumann esse emulador é composto por memória e CPU.
+Atualmente, a maioria dos computadores modernos são construídos sobre a praxis da arquitetura von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o \href{https://gzsig.io/vm-24bits/}{ASM 24bits} este apresenta as principais características de um processador moderno e permite a sua programação utilizando um Assembly\footnote{Uma linguagem assembly é uma linguagem de programação de baixo nível projetada para um tipo específico de processador. Ele pode ser produzido compilando o código-fonte de uma linguagem de programação de alto nível (como C / C ++), mas também pode ser escrito do zero.} de 20 instruções, sua \href{https://github.com/gzsig/Asm/blob/master/README.md}{Documentação}. Similar à arquitetura de von Neumann esse emulador é composto por memória e CPU, essa CPU simples possui 2 registradores, eles são :
 
 \vspace{1cm}
-\begin{tabular}{ |p{3cm}||p{9cm}|  }
+\begin{longtable}{ |p{3cm}||p{11cm}|  }
   \hline
   \multicolumn{2}{|c|}{Registradores} \\
   \hline
-    Nome &Descrição\\
+    Nome &
+    Descrição\\
   \hline
     Accumulator (ACC) &Este é o registro mais usado para armazenar dados extraídos da memória. Está em diferentes números em diferentes microprocessadores.\\
   \hline
     Instruction Register (IR) &É o registro que contém a instrução que está sendo executada atualmente.\\
   \hline
-\end{tabular}
+\end{longtable}
+\vspace{1cm}
 
+Uma unidade lógica aritmética (ALU) é um circuito digital usado para realizar operações aritméticas e lógicas. Ele representa o bloco de construção fundamental da unidade central de processamento CPU. A ULA do ASM 24bits possui 20 instruções, sendo elas:
+
+\vspace{1cm}
+\begin{longtable}{ |p{3cm}||p{11cm}|  }
+  \hline
+  \multicolumn{2}{|c|}{ULA} \\
+  \hline
+  Mnemônico &
+  Descrição\\
+  \hline
+  nop &
+  Blank memory slot \\
+  \hline
+  jmp &
+  Unconditional jump. Receives one variable as parameter and will execute the code starting from line below. \\
+  \hline
+\end{longtable}
+\vspace{1cm}
+
+Nesse momento é importante adentrar o tema de o que é a Linguagem Assembly e como funciona. Como brevemente mencionado acima, esta é uma linguagem de computação altamente dependente do hardware que esta sendo utilizado. A linguagem assembly, frequentemente abreviada como asm, é qualquer linguagem de programação de baixo nível em que há uma correspondência muito forte entre as instruções na linguagem e as instruções do código de máquina\footnote{Na programação de computadores, o código de máquina, que consiste em instruções em linguagem de máquina, é uma linguagem de programação de baixo nível usada para controlar diretamente uma CPU. Cada instrução faz com que a CPU execute uma tarefa muito específica, como uma carga, um armazenamento, um salto ou uma operação ALU em uma ou mais unidades de dados nos registros ou memória da CPU.} da arquitetura. Como a montagem depende das instruções do código de máquina, cada ``assembler'' possui sua própria linguagem de maquina, projetada para unicamente para uma arquitetura de computador específica. Nesse projeto a arquitetura usada é a Intel x86.
+
+Ao ligar qualquer computador clássico da atualidade, ele passara por algumas etapas importantes antes de chagar ao seu esta `usável' para o seu usuário final. 
+
+Quando reinicializamos nosso computador, ele deve iniciar novamente, inicialmente sem qualquer noção de um sistema operacional. De alguma forma, ele deve carregar o sistema operacional – qualquer variante que possa ser – a partir de algum dispositivo de armazenamento permanente que está atualmente conectado ao computador (um cd, um disco rígido, um USB, etc.). O ambiente pré-SO oferece poucos serviços ricos: neste estágio, mesmo um sistema de arquivos simples seria um luxo (ler e gravar arquivos lógicos em um disco), mas não temos nada disso. Felizmente, o que temos é o Basic Input / Output Software (BIOS), uma coleção de rotinas de software que são carregadas inicialmente de um chip para a memória e inicializadas quando o computador é ligado. O BIOS fornece detecção automática e controle básico dos dispositivos essenciais do seu computador, como tela, teclado e discos rígidos. Depois que o BIOS conclui alguns testes de baixo nível do hardware, principalmente se a memória instalada está funcionando corretamente ou não, ele deve inicializar o sistema operacional armazenado em um de seus dispositivos. Aqui, somos lembrados, entretanto, que o BIOS não pode simplesmente carregar um arquivo que representa seu sistema operacional a partir de um disco, já que o BIOS não tem noção de um sistema de arquivos. O BIOS deve ler setores específicos de dados (geralmente 512 bytes de tamanho) de localizações físicas específicas dos dispositivos de disco.
+
+Já vimos alguns exemplos de hexadecimal, então é importante entender por que hexadecimal é frequentemente usado na programação de nível inferior.
+
+Em primeiro lugar, pode ser útil considerar por que contar em dez parece tão natural para nós, porque quando vemos hexadecimal pela primeira vez sempre nos perguntamos: por que não simplesmente contar até dez? Não sendo um especialista no assunto, assumirei que contar até dez tem algo a ver com a maioria das pessoas ter um total de dez dedos em suas mãos, o que levou às idéias de números sendo representados como 10 símbolos distintos: 0,1, 2, ... 8,9
+
+O decimal tem uma base de dez (ou seja, tem dez símbolos de dígitos distintos), mas o hexadecimal tem uma base de 16, então temos que inventar alguns novos símbolos numéricos; e a maneira mais preguiçosa é apenas usar algumas letras, nos dando: 0,1,2, ... 8,9, a, b, c, d, e, f, onde o único dígito, por exemplo, representa uma contagem de 13.
+
+Para distinguir entre hexadecimal e outros sistemas numéricos, costumamos usar o prefixo0x, ou às vezes o sufixo, que é especialmente importante para dígitos hexadecimais que podem não conter nenhum dos dígitos da letra, por exemplo: 0x50não é igual (decimal) 50 --- 0x50é realmente 80 em decimal.
+
+A questão é que um computador representa um número como uma sequência de bits (dígitos binários), uma vez que fundamentalmente seu circuito pode distinguir apenas entre dois estados elétricos: 0 e 1 --- é como se o computador tivesse um total de apenas dois dedos. Portanto, para representar um número maior que 1, o computador pode agrupar uma série de bits, assim como podemos contra-mais de 9 tendo dois ou mais dígitos (por exemplo, 456, 23, etc.).
+
+Nomes foram adotados para séries de bits de certos comprimentos para facilitar a conversa e concordar sobre o tamanho dos números com os quais estamos lidando. As instruções da maioria dos computadores lidam com um mínimo de valores de 8 bits, que são denominados bytes. Outros agrupamentos são short, int elong, que geralmente representam valores de 16 bits, 32 bits e 64 bits, respectivamente. Também vemos o termo palavra, que é usado para descrever o tamanho da unidade máxima de processamento do modo atual da CPU: portanto, no modo real de 16 bits, a palavra se refere a um valor de 16 bits; no modo protegido de 32 bits, uma palavra se refere a um valor de 32 bits e assim por diante.
+
+Portanto, voltando ao benefício do hexadecimal: as sequências de bits são bastante demoradas para serem escritas, mas são muito mais fáceis de converter de e para a notação hexadecimal abreviada do que de e para nosso sistema decimal natural, essencialmente porque podemos quebrar a conversão em menores , Segmentos de 4 bits do número binário, em vez de tentar somar todos os bits componentes em um total geral, o que fica muito mais difícil para cadeias de bits maiores (por exemplo, 16, 32, 64, etc.).
+
+
+
+Para o melhor intendimento de computadores clássicos, foi desenvolvido um \href{https://github.com/gzsig/zsig-OS}{sistema operacional} simples que passa por todas as etapas essências do processo de ``boot'' do state of art de computadores clássicos, liga em `16 bit mode', transfere para `32 bit protected mode' e `gerencia interrupções'
 \newpage
