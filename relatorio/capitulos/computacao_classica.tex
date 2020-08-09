@@ -89,10 +89,65 @@ Uma unidade lógica aritmética (ALU) é um circuito digital usado para realizar
   Descrição\\
   \hline
   nop &
-  Blank memory slot \\
+  Slot de memória vazio \\
   \hline
   jmp &
-  Unconditional jump. Receives one variable as parameter and will execute the code starting from line below. \\
+  Salto incondicional. Recebe uma variável como parâmetro e executará o código a partir da linha abaixo. \\
+  \hline
+  jz &
+  Salta se o valor do acumulador (AC) é 0. Recebe uma variável como parâmetro e executará o código a partir da linha abaixo se o valor do AC for zero. Se o valor de AC NÃO for zero, a próxima linha será executada. \\
+  \hline
+  jnz &
+  Pula se o valor do acumulador (AC) NÃO é 0. Recebe uma variável como parâmetro e executará o código a partir da linha abaixo se o valor do AC não for zero. Se o valor de AC for zero, a próxima linha será executada. \\
+  \hline
+  lv &
+  Carregue uma constante diretamente no acumulador. Recebe uma constante em notação hexadecimal 0x00F2 por exemplo. \\
+  \hline
+  add &
+  Adicione uma constante ao valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
+  \hline
+  addm &
+  Recebe uma variável como parâmetro e adiciona o valor da variável ao valor do acumulador. \\
+  \hline
+  sub &
+  Subtraia uma constante do valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
+  \hline
+  subm &
+  Recebe uma variável como parâmetro e subtrai o valor da variável do valor do acumulador. \\
+  \hline
+  \hline
+  mul &
+  Multiplique uma constante do valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
+  \hline
+  mulm &
+  Recebe uma variável como parâmetro e multiplica o valor da variável pelo valor do acumulador. \\
+  \hline
+  div &
+  Divide o valor do acumulador por uma constante. Recebe uma constante em notação hexadecimal como parâmetro, 0x00FA por exemplo. \\
+  \hline
+  divm &
+  Recebe uma variável como parâmetro e divide o valor do acumulador pelo valor da variável. \\
+  \hline
+  load &
+  Recebe uma variável como parâmetro e carrega o valor da variável para o acumulador. \\
+  \hline
+  stor &
+  Armazene o valor atual do acumulador em uma variável. \\
+  \hline
+  sc &
+  Chamada de função. \\
+  \hline
+  rc &
+  Retorno de função, irá pular para a linha abaixo da chamada de função mantendo o valor atual no acumulador. \\
+  \hline
+  end &
+  Irá parar a execução do programa. \\
+  \hline
+  in &
+  Solicita ao usuário uma entrada (o número inserido deve ser em hexadecimal) e carrega a entrada no acumulador. \\
+  \hline
+  out &
+  Alerta o usuário com o valor atual do acumulador. \\
   \hline
 \end{longtable}
 \vspace{1cm}
