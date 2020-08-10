@@ -49,8 +49,10 @@
   \renewcommand{\contentsname}
     {Sumário}
 }
-% allow table to begin on current page
+% table style
 \usepackage{longtable}
+\usepackage{multirow}
+\usepackage[table]{colortbl}
 
 % pseudocode
 \usepackage[ruled,vlined]{algorithm2e}
@@ -67,6 +69,10 @@
   \input{resumo}
   \newpage
   \tableofcontents
+  \newpage
+  \listoftables
+  \newpage
+  \listoffigures
   \newpage
   \input{capitulos/introducao}
   \input{capitulos/computacao_classica}
