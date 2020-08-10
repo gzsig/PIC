@@ -1,17 +1,17 @@
 \section{Criptografia}
-Conforme definido por Bruce Schneier \textit{``The art and science of keeping messages secure is cryptography […].''} \cite{13} Embora a criptografia é considerada fundamental em nossas vidas digitais, não está especificamente relacionada à computação. Ele existe em diversas formas há milênios.
+Conforme definido por Bruce Schneier \textit{``The art and science of keeping messages secure is cryptography […].''} \cite{13} Embora a criptografia seja considerada fundamental em nossas vidas digitais, ela não está especificamente relacionada à computação. A criptografia existe em diversas formas há milênios.
 
-Na segurança cibernética, há uma série de coisas com as quais nos preocupamos quando se trata de dados. Isso inclui confidencialidade, integridade, disponibilidade e não repúdio.
+Na segurança cibernética, há uma série de preocupações quando se trata de dados. Isso inclui confidencialidade, integridade, disponibilidade e não repúdio.
 
-\textbf{Confidencialidade} significa que nossos dados não podem ser acessados / lidos por usuários não autorizados.
+\textbf{A confidencialidade} significa que nossos dados não podem ser acessados / lidos por usuários não autorizados.
 
-\textbf{Integridade} significa que nossos dados chegam a nós 100\% intactos e não foram modificados, seja por um ator malicioso, perda de dados ou outros.
+\textbf{A integridade} do dado diz respeito à originalidade(?) na qual os dados chegam à nós, estando 100\% intactos, sem terem sido modificados - seja por um ator malicioso, perda de dados ou por algum outro fator. 
 
-\textbf{Disponibilidade} significa que nossos dados estão acessíveis quando necessário.
+\textbf{A disponibilidade} se refere à acessibilidade dos dados quando necessário.
 
-\textbf{Não-repúdio} significa que, se um sujeito enviar alguns dados para outro, ele não poderá alegar mais tarde que não era, de fato, o remetente dessa informação. Em outras palavras, existe uma maneira de determinar que ninguém além de ele próprio poderia ter enviado os dados.
 
-Examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos a um dos seguintes:
+Examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos a uma das seguintes criptografias, que serão melhor explicadas e exemplificadas na própria sessão.
+
 \begin{enumerate}
   \item Criptografia simétrica
   \item Criptografia assimétrica
@@ -20,11 +20,11 @@ Examinaremos as várias formas de criptografia digital e como elas podem nos aju
 
 Esses conceitos serão explicados e exemplificados na próxima secção.
 
-É temido que os computadores quânticos sejam capazes de decifrar certos códigos usados para enviar mensagens seguras. Os códigos em questão criptografam dados usando funções matemáticas de ``trapdoor'' que funcionam facilmente em uma direção, mas não na outra. Isso facilita a criptografia de dados, mas a decodificação é extremamente difícil sem a ajuda de uma chave especial.
+É temido que os computadores quânticos sejam capazes de decifrar certos códigos usados para enviar mensagens seguras. Os códigos em questão criptografam dados usando funções matemáticas de ``trapdoor'' que funcionam facilmente em uma direção, mas não em outra. Isso facilita a criptografia de dados, mas a decodificação é extremamente difícil sem a ajuda de uma chave especial.
 
-Esses sistemas de criptografia nunca foram inquebráveis, sua segurança se baseia na enorme quantidade de tempo que um computador clássico levaria para fazer o trabalho. Os métodos modernos de criptografia são projetados especificamente para que a decodificação demore tanto tempo que são praticamente inquebráveis.
+Esses sistemas de criptografia nunca foram inquebráveis, sua segurança se baseia na enorme quantidade de tempo que um computador clássico levaria para fazer o trabalho. Os métodos modernos de criptografia são projetados especificamente para que a decodificação demore tanto tempo de forma a serem praticamente inquebráveis.
 
-Mas os computadores quânticos mudam esse pensamento. Essas máquinas são muito mais poderosas que os computadores clássicos e devem poder quebrar esses códigos com facilidade.
+No entanto, os computadores quânticos mudaram esse pensamento. Essas máquinas são muito mais poderosas que os computadores clássicos, tornando possível o rompimento desses códigos com facilidade, já que realizam contas matemáticas de forma mais eficiente e significativamente mais rápido que os computadores clássicos.
 
 \subsection{Conceitos básicos de criptografia}
 Antes de mergulharmos nisso: o que exatamente queremos dizer com "criptografia"? Criptografar e descriptografar são normalmente usadas para significar criptografia e decifração, respectivamente; Para simplificar, criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis mais uma vez.
