@@ -2,11 +2,18 @@
 \subsection{Definição justificada dos objetivos e da sua relevância}
 A palavra “computador” é usada desde o século XVII, tendo a sua primeira referência escrita datada de 1613. No entanto, por muito tempo “computador” não tinha o mesmo significado que leva hoje, sendo utilizada, até a década de 1940, como nome da profissão de alguém que calcula, segundo o dicionário Michaelis: “Aquele ou aquilo que calcula baseado em valores digitais; calculador, calculista”. \cite{4}
 
-Tendo em vista o antigo significado da palavra “computador”, pode-se questionar sobre como passamos a utilizar de uma palavra usada para se referir à pessoas, para mera maquinas. A fim de responder essa pergunta, recuperaremos a origem dos computadores. Pode parecer um questionamento simplista que não precisa ser respondido, porém, é uma pergunta da qual muitas pessoas não sabem a verdadeira resposta. Computadores existem há muito mais tempo que o transistor – dispositivo semicondutor usado para amplificar ou alternar sinais eletrônicos e eletricidade – na forma mecânica e teórica. A definição real de um computador foi elaborada por Alan Turing (Reino Unido, 1912-1954), um matemático, lógico, criptógrafo e herói de guerra que se preocupava exatamente com a questão relacionada ao que era computável e o que não era. Ele foi responsável por elaborar a definição do computador, descrevendo a Maquina de Turing, trabalho publicado em 1937 que deu origem aos computadores e celulares que você, leitor, pode estar usando para ler o presente trabalho.
+Tendo em vista o antigo significado da palavra “computador”, pode-se questionar sobre como passamos a utilizar uma palavra usada para se referir a pessoas, para maquinas. A fim de responder essa pergunta, recuperaremos a origem dos computadores. Pode parecer um questionamento simples, porém muitas pessoas não sabem a verdadeira resposta. Computadores existem há mais tempo que o transistor – dispositivo semicondutor usado para amplificar ou alternar sinais eletrônicos e eletricidade – na forma mecânica e teórica. A definição de ``computador'' foi elaborada por Alan Turing (Reino Unido, 1912-1954), um matemático, lógico, criptógrafo e herói de guerra que se preocupava exatamente com a questão relacionada ao que era computável e o que não era. Ele foi elaborou a definição de computador, descrevendo a Maquina de Turing, em um trabalho publicado em 1937. A origem dos computadores e celulares que você, leitor, pode estar usando para ler o presente trabalho é fruto do resultado deste trabalho.
 
 A Maquina de Turing, considerada o modelo mais poderoso de computador, é similar a um automato finito\footnote{Um sub-tópico da Ciência da computação teórica, também chamado máquina de estados finita determinística — é uma máquina de estados finita que aceita ou rejeita cadeias de símbolos gerando um único ramo de computação para cada cadeia de entrada.}, porém com uma mémoria ilimitada e irrestrita, constituindo um modelo mais exato de um computador de forma geral. Esta é composta por três principais componentes: fita infinita; processador; máquina de estado finito. 
 
-A fita infinita é dividida em células, cada uma contendo um simbolo de um alfabeto finito. O processador é responsável por se deslocar para a direita ou para a esquerda e efetuar a leitura ou escrita em uma célula. Assim, o Prof. Dr. Fabio Gagliardi Cozman \cite{7}, ilustra seu funcionamento da seguinte forma:
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{turing_machine}}
+  \caption{\label{fig:1} Desenho esquemático Maquina de Turing} 
+\end{figure}
+
+A fita infinita é dividida em células, cada uma contendo um simbolo de um alfabeto finito. O processador é responsável por se deslocar para a direita ou para a esquerda e efetuar a leitura ou escrita em uma célula. Assim, o Prof. Dr. Fabio Gagliardi Cozman\cite{7}, ilustra seu funcionamento da seguinte forma:
 \begin{enumerate}
   \item Inicialmente a fita contém somente a cadeia de entrada, disposta no “meio”\footnote{Meio é algo abstrato nesse sentido pois não existe meio de um valor infinito} da fita , com o processador posicionado no início da cadeia (o resto está em branco);
   \item Para armazenar algo, a máquina escreve na fita;
@@ -15,14 +22,14 @@ A fita infinita é dividida em células, cada uma contendo um simbolo de um alfa
   \item Se não entrar em um estado de aceitação ou rejeição, continuará sua computação para sempre, em  "loop infinito".
 \end{enumerate}
 
-O primeiro computador digital eletrônico de grande escala, foi criado em fevereiro de 1946 por cientistas norte-americanos, John Presper Eckert e John W. Mauchly, da Electronic Control Company . No final de sua operação em 1956, o ENIAC (Electrical Numerical Integrator and Calculator), continha 20.000 tubos de vácuo, 7.200 diodos de cristal, 1.500 relés, 70.000 resistores, 10.000 capacitores e aproximadamente 5.000.000 juntas soldadas à mão. Ele pesava mais de 27 toneladas, tinha aproximadamente 2,4m * 0,9m * 30m de tamanho, ocupava 167 m2 e consumia 150 kW de eletricidade. \cite{2}
+O primeiro computador digital eletrônico de grande escala, foi criado em fevereiro de 1946 por cientistas norte-americanos, John Presper Eckert e John W. Mauchly, da Electronic Control Company. No final de sua operação em 1956, o ENIAC (Electrical Numerical Integrator and Calculator), continha 20.000 tubos de vácuo, 7.200 diodos de cristal, 1.500 relés, 70.000 resistores, 10.000 capacitores e aproximadamente 5.000.000 juntas soldadas à mão. Ele pesava mais de 27 toneladas, tinha aproximadamente 2,4m * 0,9m * 30m de tamanho, ocupava 167 m2 e consumia 150 kW de eletricidade. \cite{2}
 
 A partir do ENIAC, as possibilidades tectológicas tomaram uma nova proporção. Em 1969, apenas 13 anos após o desligamento do primeiro computador digital eletrônico, o computador de bordo da Apollo 11 – missão que levou o homem  à Lua – tinha 32.768 bits\footnote{Para uma explicação elaborada sobre bits refira-se ao capítulo \ref{bits} pagina \pageref{bits}} de RAM, o suficiente para armazenar apenas um texto não formatado, com cerca de 2.000 palavras. O que contrasta com o Iphone XS com 4gb de RAM, que em 2018, tinha cerca de 1 milhão de vezes mais de memória que o Apollo Guinche Computer. \cite{5}
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
   \makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{ENIAC_floor_layout}}
-  \caption{\label{fig:1} Desenho esquemático do ENIAC/US Center for Military History –
+  \caption{\label{fig:2} Desenho esquemático do ENIAC/US Center for Military History –
   Adele Goldstine} 
 \end{figure}
 
