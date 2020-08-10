@@ -46,13 +46,13 @@ Alan Turing, matemático inglês, cientista da computação, lógico, criptoanal
 
 O mecanismo abstrato descrito no artigo de Turing fornece os conceitos fundamentais de computadores que outros engenheiros conceberam posteriormente. Na sua essência, uma Máquina de Turing é um dispositivo que manipula símbolos em uma tira de fita de acordo com uma tabela de regras. O cientista forneceu a formalização dos conceitos de “algoritmo” e “computação” na infância da ciência da computação. Apesar de sua simplicidade, uma Máquina de Turing pode ser adaptada para simular a lógica de qualquer algoritmo de computador e é útil para explicar as funções de uma CPU.
 
-Apesar dos computadores clássicos serem atualmente descritos como tendo a chamada arquitetura de Von Neumann, acredita-se que o idealizador dessa arquitetura partiu dos modelos matemáticos desenvolvidos por Alan Turing, que incluia o conceito de programa armazenado, originado a partir da construção da Maquina de Turing. Conceito também encontrado no projeto EDVAC de Von Neumann \cite{9}, que possibilita o armazenamento de instruções e dados na mesma memória, permitindo a manipulação de programas como dados, que se constitui como característica definidora do computador clássico. Assim, pode-se alegar que Turing é o pai do computador já que suas publicações antecedem a arquitetura de Von Neumann, além de existirem razões para se acreditar que este último conhecia os resultados do trabalho de Alan Turing \cite{10}, que podem ter inspirado as suas criações. Outro fator que corrobora para este entendimento, é que Turing foi o primeiro a explorar a idéia de uma máquina de uso geral por meio de sua noção de máquina universal – que constitui a base do computador clássico ao possibilitar o funcionamento da CPU em conjunto com a memória RAM. Ainda tendo em vista as contribuições do matemático para a construção de uma classe importante de dispositivos de computação, o Bombe – um dispositivo eletromecânico usado pelos criptologistas britânicos para ajudar a decifrar as mensagens secretas criptografadas pela máquina alemã Enigma durante a Segunda Guerra Mundial – e posteriormente o seu design do ACE (Automatic Computing Engine), fica evidente as contribuições de Alan Turing para a invenção do computador moderno. A partir da fala de Turing abaixo, pode-se identificar o ACE como um tipo de realização física da máquina universal.
+Apesar dos computadores clássicos serem atualmente descritos como tendo a chamada arquitetura de Von Neumann, acredita-se que o idealizador dessa arquitetura partiu dos modelos matemáticos desenvolvidos por Alan Turing, que incluia o conceito de programa armazenado, originado a partir da construção da Maquina de Turing. Conceito, também encontrado no projeto EDVAC de Von Neumann \cite{9}, que possibilita o armazenamento de instruções e dados na mesma memória, permitindo a manipulação de programas como dados, que se constitui como característica definidora do computador clássico. Assim, pode-se alegar que Turing é o pai do computador já que suas publicações antecedem a arquitetura de Von Neumann, além de existirem razões para se acreditar que este último conhecia os resultados do trabalho de Alan Turing \cite{10}, que podem ter inspirado as suas criações. Outro fator que corrobora para este entendimento, é que Turing foi o primeiro a explorar a idéia de uma máquina de uso geral por meio de sua noção de máquina universal – que constitui a base do computador clássico ao possibilitar o funcionamento da CPU em conjunto com a memória RAM. Ainda, tendo em vista as contribuições do matemático para a construção de uma classe importante de dispositivos de computação, o Bombe – um dispositivo eletromecânico usado pelos criptologistas britânicos para ajudar a decifrar as mensagens secretas criptografadas pela máquina alemã Enigma durante a Segunda Guerra Mundial – e posteriormente o seu design do ACE (Automatic Computing Engine), fica evidente as contribuições de Alan Turing para a invenção do computador moderno. A partir da fala de Turing abaixo, pode-se identificar o ACE como um tipo de realização física da máquina universal.
 
 \textit{
   ``Some years ago I was researching on what might now be described as an investigation of the theoretical possibilities and limitations of digital computing machines. […] Machines such as the ACE may be regarded as practical versions of this same type of machine.'' \cite{11}
 }
 
-Por fim, conclui-se que baseado na teoria da máquina de Turing, o físico e matemático John von Neumann desenvolveu uma arquitetura que era capaz de executar as seguintes tarefas.
+Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e matemático John von Neumann desenvolveu uma arquitetura capaz de executar as seguintes tarefas.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -98,28 +98,28 @@ Uma unidade lógica aritmética (ALU) é um circuito digital usado para realizar
   Salto incondicional. Recebe uma variável como parâmetro e executará o código a partir da linha abaixo. \\
   \hline
   jz &
-  Salta se o valor do acumulador (AC) é 0. Recebe uma variável como parâmetro e executará o código a partir da linha abaixo se o valor do AC for zero. Se o valor de AC NÃO for zero, a próxima linha será executada. \\
+  Salta se o valor do acumulador (AC) é 0. Recebe uma variável como parâmetro e executa o código a partir da linha abaixo se o valor do AC for zero. Se o valor de AC NÃO for zero, a próxima linha será executada. \\
   \hline
   jnz &
-  Pula se o valor do acumulador (AC) NÃO é 0. Recebe uma variável como parâmetro e executará o código a partir da linha abaixo se o valor do AC não for zero. Se o valor de AC for zero, a próxima linha será executada. \\
+  Pula se o valor do acumulador (AC) NÃO é 0. Recebe uma variável como parâmetro e executa o código a partir da linha abaixo se o valor do AC não for zero. Se o valor de AC for zero, a próxima linha será executada. \\
   \hline
   lv &
-  Carregue uma constante diretamente no acumulador. Recebe uma constante em notação hexadecimal 0x00F2 por exemplo. \\
+  Carrega uma constante diretamente no acumulador. Recebe uma constante em notação hexadecimal 0x00F2 por exemplo. \\
   \hline
   add &
-  Adicione uma constante ao valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
+  Adiciona uma constante ao valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
   \hline
   addm &
   Recebe uma variável como parâmetro e adiciona o valor da variável ao valor do acumulador. \\
   \hline
   sub &
-  Subtraia uma constante do valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
+  Subtrai uma constante do valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
   \hline
   subm &
   Recebe uma variável como parâmetro e subtrai o valor da variável do valor do acumulador. \\
   \hline
   mul &
-  Multiplique uma constante do valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
+  Multiplica uma constante do valor do acumulador. Recebe uma constante em notação hexadecimal 0x00FA por exemplo. \\
   \hline
   mulm &
   Recebe uma variável como parâmetro e multiplica o valor da variável pelo valor do acumulador. \\
@@ -134,7 +134,7 @@ Uma unidade lógica aritmética (ALU) é um circuito digital usado para realizar
   Recebe uma variável como parâmetro e carrega o valor da variável para o acumulador. \\
   \hline
   stor &
-  Armazene o valor atual do acumulador em uma variável. \\
+  Armazena o valor atual do acumulador em uma variável. \\
   \hline
   sc &
   Chamada de função. \\
@@ -158,7 +158,7 @@ Além da Linguagem Assembly, anteriormente mencionada, ser utilizada para a cria
 
 Ao ligar qualquer computador clássico da atualidade, ele passara por algumas etapas importantes antes de poder ser usado pelo seu usuário final. 
 
-Quando reiniciamos um computador, ele deve iniciar novamente, sem qualquer noção de um sistema operacional. De alguma forma, ele deve carregar o sistema operacional, de qualquer variante (Mac, Windows, Linux, etc.), a partir de algum dispositivo de armazenamento permanente que está atualmente conectado ao computador seja um cd, um disco rígido, um USB, etc. O ambiente pré-SO oferece poucos serviços de alto nível. Neste estágio, mesmo um sistema de arquivos simples, que possa ler e gravar arquivos lógicos em um disco, seria um luxo. Felizmente, temos disponível o Basic Input/Output Software (BIOS), uma coleção de rotinas de software que são carregadas inicialmente de um chip para a memória e inicializadas quando o computador é ligado. O BIOS fornece detecção automática e controle básico dos dispositivos essenciais do seu computador, como tela, teclado e discos rígidos. Depois que este conclui alguns testes de baixo nível do hardware, principalmente se a memória instalada está funcionando corretamente ou não, ele deve iniciar o sistema operacional já armazenado em um de seus dispositivos. No entanto, precisamos lembrar que o BIOS não pode simplesmente carregar um arquivo que represente seu sistema operacional a partir de um disco, pois o ele não tem noção de um sistema de arquivos. Este deve ler setores específicos de dados (geralmente 512 bytes de tamanho) de localizações físicas específicas dos dispositivos de disco, para carregar do sistema operacional.
+Quando reiniciamos um computador, ele deve iniciar novamente, sem qualquer noção de um sistema operacional. Ele deve carregar o sistema operacional, de qualquer variante (Mac, Windows, Linux, etc.), a partir de algum dispositivo de armazenamento permanente que está atualmente conectado ao computador seja um cd, um disco rígido, um USB, etc. O ambiente pré-SO oferece poucos serviços de alto nível. Neste estágio, mesmo um sistema de arquivos simples, que possa ler e gravar arquivos lógicos em um disco, seria um luxo. Felizmente, temos disponível o Basic Input/Output Software (BIOS), uma coleção de rotinas de software que são carregadas inicialmente de um chip para a memória e inicializadas quando o computador é ligado. O BIOS fornece detecção automática e controle básico dos dispositivos essenciais do seu computador, como tela, teclado e discos rígidos. Depois que este conclui alguns testes de baixo nível do hardware, principalmente se a memória instalada está funcionando corretamente ou não, ele deve iniciar o sistema operacional já armazenado em um de seus dispositivos. No entanto, precisamos lembrar que o BIOS não pode simplesmente carregar um arquivo que represente seu sistema operacional a partir de um disco, pois o ele não tem noção de um sistema de arquivos. Este deve ler setores específicos de dados (geralmente 512 bytes de tamanho) de localizações físicas específicas dos dispositivos de disco, para carregar do sistema operacional.
 
 Anteriormente, já utilizamos exemplos de números hexadecimais, frequentemente usados na programação de baixo nível. No entanto, ainda não adentramos o por que desse uso. É natural que optemos por usar os números em base 10 já que culturalmente estamos mais acostumados a eles. Georges Ifrah em seu livro, ``The Universal History of Numbers''\cite{14} aponta que:
 
