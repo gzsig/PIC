@@ -9,7 +9,6 @@ Na segurança cibernética, há uma série de preocupações quando se trata de 
 
 \textbf{A disponibilidade} se refere à acessibilidade dos dados quando necessário.
 
-
 Examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos a uma das seguintes criptografias, que serão melhor explicadas e exemplificadas na própria sessão.
 
 \begin{enumerate}
@@ -27,7 +26,7 @@ Esses sistemas de criptografia nunca foram inquebráveis, sua segurança se base
 No entanto, os computadores quânticos mudaram esse pensamento. Essas máquinas são muito mais poderosas que os computadores clássicos, tornando possível o rompimento desses códigos com facilidade, já que realizam contas matemáticas de forma mais eficiente e significativamente mais rápido que os computadores clássicos.
 
 \subsection{Conceitos básicos de criptografia}
-Antes de mergulharmos nisso: o que exatamente queremos dizer com "criptografia"? Criptografar e descriptografar são normalmente usadas para significar criptografia e decifração, respectivamente; Para simplificar, criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis mais uma vez.
+Antes de mergulharmos nisso: o que exatamente queremos dizer com "criptografia"? Criptografar e descriptografar são normalmente usadas para significar criptografia e decifração, respectivamente; para simplificar, criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis mais uma vez.
 
 \subsubsection{Criptografia simétrica}
 Para criptografar e descriptografar corretamente nossos dados, precisamos dos dados e de uma chave (que determina a saída da nossa cifra).
@@ -43,7 +42,7 @@ Ao criptografar uma mensagem, o usuário pega a primeira chave e guarda para si 
 
 A segunda chave, sua chave “pública”: Pode ser distribuida para qualquer pessoa. Assim, o usuário tem sua chave privada que pode mudar de A para B para C. E todo os outros tem sua chave pública que pode mudar de C para B para A.
 
-Colocando isso em pratica, imagine que você queira enviar um documento privado para o usuario. Você coloca o documento na caixa e usa uma cópia da chave pública dele para bloqueá-lo. Lembre-se de que a chave pública dele gira apenas no sentido anti-horário, e você a coloca na posição A. Agora a caixa está bloqueada. A única chave que pode passar de A para B é a chave privada, a que ele guardou para si.
+Colocando isso em prática, imagine que você queira enviar um documento privado para o usuario. Você coloca o documento na caixa e usa uma cópia da chave pública dele para bloqueá-lo. Lembre-se de que a chave pública dele gira apenas no sentido anti-horário, e você a coloca na posição A. Agora a caixa está bloqueada. A única chave que pode passar de A para B é a chave privada, a que ele guardou para si.
 
 \subsubsection{Funções de hash}
 Uma função de hash, diferente da criptografia simétrica / assimétrica, é uma função unidirecional. Você pode criar um hash a partir de alguns dados, mas não há como reverter o processo. Como tal, não é uma maneira útil de armazenar dados, mas é uma maneira útil de verificar a integridade de alguns dados.
@@ -168,3 +167,4 @@ Uma função de hash recebe alguns dados como entrada e gera uma string aparente
 \subsection{Criptografia aplicada computação clássica}
 \subsection{Criptografia aplicada computação quântica}
 \newpage
+
