@@ -17,10 +17,9 @@
 %define colors
 \usepackage[dvipsnames]{xcolor}
 \newcommand\myshade{}
-\colorlet{mylinkcolor}{violet}
-\colorlet{mycitecolor}{YellowOrange}
-\colorlet{myurlcolor}{gray}
-\colorlet{myfootnotecolor}{Aquamarine}
+\colorlet{mylinkcolor}{black}
+\colorlet{mycitecolor}{OliveGreen}
+\colorlet{myurlcolor}{MidnightBlue}
 % set color for each type of link
 \hypersetup{
   colorlinks = true,
@@ -28,17 +27,7 @@
   linkcolor  = mylinkcolor!\myshade!black,
   urlcolor   = myurlcolor!\myshade!black,
 }
-% set color for footnotes
-\makeatletter
-\newcommand{\org@footnotemark}{}
-\let\org@footnotemark\@footnotemark
-\def\@footnotemark{
-  \begingroup
-    \hypersetup{linkcolor=myfootnotecolor!\myshade!black}
-    \org@footnotemark
-  \endgroup
-}
-\makeatother
+
 % package to include images
 \usepackage{float}
 \usepackage[pass]{geometry}

@@ -4,7 +4,7 @@ Entende-se a importância de se compreender a origem e o desenvolvimento da comp
 
 A computação clássica consiste em computadores que dependem da física clássica para operar. Estes são os computadores tradicionais que usamos em nosso dia-a-dia – sejam eles Apple, Samsung, Dell ou qualquer outro –, também classificados como computadores binários, pois processam as instruções a partir de números binários, compostos apenas pelos símbolos ``1'' e ``0'', ligado e desligado, respectivamente. Assim, julga-se importante e de larga relevância ao tema compreender essa representação numérica. 
 
-Números binários ou números em base 2 são compostos por apenas dois dígitos, {0, 1}. Dessa forma, seu funcionamento é similar ao sistema decimal, ou base 10, que são compostos por dez dígitos, {0; 9}. No sistema decimal, é simples contar até nove, porém não existe um símbolo ou dígito para representar o número dez, sendo então representado por dois dígitos, ``10'', sendo uma simples lógica de posicionamento. Mais uma vez, após o número ``99'', é necessário utilizar da mesma regra para representar o número cem, ``100''. Já em base 2, o número zero é representado pelo símbolo ``0'', e o número um por ``1''. O mesmo dilema é enfrentado ao chegar no próximo valor: dois. E então é usada a mesma lógica de posicionamento, em base dois. Desta forma, o número dois é representado por ``10'', o três por ``11'', quatro por ``100'' e assim por diante. Portanto, números binários podem se tornar longos e compostos por muitos dígitos que levam o nome de bits. \cite{6} É com base nos \label{bits}bits\footnote{A menor unidade de informação que pode ser armazenada ou transmitida na comunicação de dados.} ligados e desligados que o computador baseia a sua linguagem. Para transforma-lo em base dez é preciso avaliar o valor de cada bit de acordo com a sua posição. 
+Números binários ou números em base 2 são compostos por apenas dois dígitos, {0, 1}. Dessa forma, seu funcionamento é similar ao sistema decimal, ou base 10, que são compostos por dez dígitos, {0; 9}. No sistema decimal, é simples contar até nove, porém não existe um símbolo ou dígito para representar o número dez, sendo então representado por dois dígitos, ``10'', sendo uma simples lógica de posicionamento. Mais uma vez, após o número ``99'', é necessário utilizar da mesma regra para representar o número cem, ``100''. Já em base 2, o número zero é representado pelo símbolo ``0'', e o número um por ``1''. O mesmo dilema é enfrentado ao chegar no próximo valor: dois. E então é usada a mesma lógica de posicionamento, em base dois. Desta forma, o número dois é representado por ``10'', o três por ``11'', quatro por ``100'' e assim por diante. Portanto, números binários podem se tornar longos e compostos por muitos dígitos que levam o nome de bits \cite{6}. É com base nos \label{bits}bits\footnote{A menor unidade de informação que pode ser armazenada ou transmitida na comunicação de dados.} ligados e desligados que o computador baseia a sua linguagem. Para transforma-lo em base dez é preciso avaliar o valor de cada bit de acordo com a sua posição. 
 
 Exemplo: número binário $1011$:
 
@@ -57,11 +57,11 @@ Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e mat
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
-  \makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{von_neumann_architecture}}
+  \makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{von_neumann_architecture.png}}
   \caption{\label{fig:3} Diagrama arquitetura de Von Neumann} 
 \end{figure}
 
-Nessa arquitetura, o cabeçote passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construídas e executadas em circuitos formados por portas lógicas chamadas de ALU (Arithmetic/Logic Unit). \cite{12}
+Nessa arquitetura, o cabeçote passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construídas e executadas em circuitos formados por portas lógicas chamadas de ALU (Arithmetic/Logic Unit) \cite{12}.
 
 Atualmente, a maioria dos computadores modernos são construídos sobre a práxis da arquitetura von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o \href{https://gzsig.io/vm-24bits/}{ASM 24bits} que permite a sua programação utilizando um Assembly\footnote{Uma linguagem assembly é uma linguagem de programação de baixo nível projetada para um tipo específico de processador. Ele pode ser produzido compilando o código-fonte de uma linguagem de programação de alto nível (como C / C ++), mas também pode ser escrito do zero.} de 20 instruções, sua \href{https://github.com/gzsig/Asm/blob/master/README.md}{Documentação}. Similar à arquitetura de Von Neumann esse emulador é composto por memória e CPU, essa CPU simples possui dois registradores descritos abaixo:
 
@@ -154,7 +154,7 @@ Uma unidade lógica aritmética (ALU) é um circuito digital usado para realizar
   out &
   Alerta o usuário com o valor atual do acumulador. \\
   \hline
-  \caption{instruções ASM 24 bit}
+  \caption{Instruções ASM 24 bit}
   \label{table:2}
 \end{longtable}
 \vspace{1cm}
