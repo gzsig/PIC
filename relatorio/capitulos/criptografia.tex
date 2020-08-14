@@ -1,15 +1,15 @@
 \section{Criptografia}
-Conforme definido por Bruce Schneier \textit{``The art and science of keeping messages secure is cryptography […].''} \cite{13} Embora a criptografia seja considerada fundamental em nossas vidas digitais, ela não está especificamente relacionada à computação. A criptografia existe em diversas formas há milênios.
+Conforme definido por Bruce Schneier \textit{``The art and science of keeping messages secure is cryptography […].''} \cite{13} Embora a criptografia seja considerada fundamental em nossas vidas digitais, ela não está especificamente relacionada à computação. A criptografia existe há milênios.
 
 Na segurança cibernética, há uma série de preocupações quando se trata de dados. Isso inclui confidencialidade, integridade, disponibilidade e não repúdio.
 
 \textbf{A confidencialidade} significa que nossos dados não podem ser acessados / lidos por usuários não autorizados.
 
-\textbf{A integridade} do dado diz respeito à originalidade na qual os dados chegam à nós, estando 100\% intactos, sem terem sido modificados - seja por um ator malicioso, perda de dados ou por algum outro fator. 
+\textbf{A integridade} do dado diz respeito à originalidade na qual os dados chegam a nós, estando 100\% intactos, sem terem sido modificados – seja por um ato malicioso, perda de dados ou por algum outro fator. 
 
 \textbf{A disponibilidade} se refere à acessibilidade dos dados quando necessário.
 
-Examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos a uma das seguintes criptografias, que serão melhor explicadas e exemplificadas na própria sessão.
+Examinaremos as várias formas de criptografia digital e como elas podem nos ajudar a alcançar os três objetivos listados acima. Quando falamos de criptografia digital, geralmente nos referimos aos conceitos abaixo, que serão especificados posteriormente.
 
 \begin{enumerate}
   \item Criptografia simétrica
@@ -17,32 +17,34 @@ Examinaremos as várias formas de criptografia digital e como elas podem nos aju
   \item Funções de hash
 \end{enumerate}
 
-Esses conceitos serão explicados e exemplificados na próxima secção.
+Temos receio que os computadores quânticos sejam capazes de decifrar certos códigos usados para enviar mensagens seguras. Esses códigos criptografam dados usando funções matemáticas de ``trapdoor'' que funcionam facilmente em uma direção, mas não em outra. Isso facilita a criptografia de dados, mas a decodificação é extremamente difícil sem a ajuda de uma chave especial.
 
-É temido que os computadores quânticos sejam capazes de decifrar certos códigos usados para enviar mensagens seguras. Os códigos em questão criptografam dados usando funções matemáticas de ``trapdoor'' que funcionam facilmente em uma direção, mas não em outra. Isso facilita a criptografia de dados, mas a decodificação é extremamente difícil sem a ajuda de uma chave especial.
+Esses sistemas de criptografia não são inquebráveis e sua segurança se baseia na enorme quantidade de tempo que um computador clássico levaria para fazer o trabalho. Os métodos modernos de criptografia são projetados para que a decodificação demore tanto tempo que se tornem praticamente inquebráveis.
 
-Esses sistemas de criptografia nunca foram inquebráveis, sua segurança se baseia na enorme quantidade de tempo que um computador clássico levaria para fazer o trabalho. Os métodos modernos de criptografia são projetados especificamente para que a decodificação demore tanto tempo de forma a serem praticamente inquebráveis.
-
-No entanto, os computadores quânticos mudaram esse pensamento. Essas máquinas são muito mais poderosas que os computadores clássicos, tornando possível o rompimento desses códigos com facilidade, já que realizam contas matemáticas de forma mais eficiente e significativamente mais rápido que os computadores clássicos.
+A chegada dos computadores quânticos mudou esse pensamento. Essas máquinas são muito mais poderosas que os computadores clássicos, tornando possível o rompimento desses códigos com facilidade, já que realizam contas matemáticas de forma mais eficiente e significativamente mais rápido que os computadores clássicos.
 
 \subsection{Conceitos básicos de criptografia}
-Antes de mergulharmos nisso: o que exatamente queremos dizer com "criptografia"? Criptografar e descriptografar são normalmente usadas para significar criptografia e decifração, respectivamente; para simplificar, criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis mais uma vez.
+Antes de mergulharmos no conceito de criptografia, precisamos saber o que exatamente ela significa. Criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis, decifrando-os mais uma vez.
 
 \subsubsection{Criptografia simétrica}
-Para criptografar e descriptografar corretamente nossos dados, precisamos dos dados e de uma chave (que determina a saída da nossa cifra).
-Com a criptografia simétrica, a chave usada para criptografar e descriptografar dados é a mesma.
+Para criptografar e descriptografar corretamente nossos dados, precisamos de uma chave (que determina a saída da nossa cifra). Na criptografia simétrica, a chave usada para criptografar e decifrar os dados é a mesma.
 
 \subsubsection{Criptografia assimétrica}
-O problema da criptografia simétrica é o seguinte: E se eu precisar enviar dados com segurança em um ambiente hostil, como a Internet? Se a mesma chave for usada para criptografar e descriptografar dados, primeiro eu precisaria enviar a chave de descriptografia para estabelecer uma conexão segura. Mas isso significa que estou enviando a chave por uma conexão insegura, o que significa que a chave pode ser interceptada e usada por terceiros! Como contornar isso? 
+A criptografia assimétrica surge para resolver o problema da simétrica – se for preciso enviar dados com segurança em um ambiente hostil, como a Internet, como faria? Se a mesma chave for usada para criptografar e decifrar dados, primeiro precisaríamos enviar a chave de descriptografia para estabelecer uma conexão segura. Mas isso significa que estaríamos enviando a chave por uma conexão insegura, e assim a chave pode ser interceptada e usada por terceiros! Como contornar isso?
 
-Para exemplificar, usaremos um cadeado que possui três estados: A (bloqueado), B (desbloqueado) e C (bloqueado).
-E tem duas chaves distintas. A primeiro pode girar apenas no sentido horário (de A a B a C) e a segunda pode girar apenas no sentido anti-horário (de C a B a A).
+Para exemplificar, usaremos um cadeado que possui três estados: A (bloqueado), B (desbloqueado) e C (bloqueado). E tem duas chaves distintas. A primeira pode girar apenas no sentido horário (de A a B a C) e a segunda pode girar apenas no sentido anti-horário (de C a B a A).
 
-Ao criptografar uma mensagem, o usuário pega a primeira chave e guarda para si mesmo. Essa chave, sua chave "privada" - porque apenas ele a possui.
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.8\textwidth]{cripto_keys}}
+  \caption{\label{fig:5} Ilustração da posição das chaves} 
+\end{figure}
 
-A segunda chave, sua chave ``pública'': Pode ser distribuida para qualquer pessoa. Assim, o usuário tem sua chave privada que pode mudar de A para B para C. E todo os outros tem sua chave pública que pode mudar de C para B para A.
+Ao criptografar uma mensagem, o usuário pega a primeira chave e guarda para si mesmo. Essa chave, sua chave ``privada'' - porque apenas ele a possui.
 
-Colocando isso em prática, imagine que você queira enviar um documento privado para o usuario. Você coloca o documento na caixa e usa uma cópia da chave pública dele para bloqueá-lo. Lembre-se de que a chave pública dele gira apenas no sentido anti-horário, e você a coloca na posição A. Agora a caixa está bloqueada. A única chave que pode passar de A para B é a chave privada, a que ele guardou para si.
+A segunda chave, sua chave ``pública'': Pode ser distribuída para qualquer pessoa. Assim, o usuário tem sua chave privada que pode mudar de A para B para C. E todo os outros tem sua chave pública que pode mudar de C para B para A.
+
+Colocando isso em prática, imagine que você queira enviar um documento privado para o usuário. Você coloca o documento na caixa e usa uma cópia da chave pública dele para bloqueá-lo. Lembre-se de que a chave pública dele gira apenas no sentido anti-horário, e você a coloca na posição A. Agora a caixa está bloqueada. A única chave que pode passar de A para B é a chave privada, a que ele guardou para si.
 
 \subsubsection{Funções de hash}
 Uma função de hash, diferente da criptografia simétrica / assimétrica, é uma função unidirecional. Você pode criar um hash a partir de alguns dados, mas não há como reverter o processo. Como tal, não é uma maneira útil de armazenar dados, mas é uma maneira útil de verificar a integridade de alguns dados.
@@ -148,7 +150,7 @@ Uma função de hash recebe alguns dados como entrada e gera uma string aparente
     \[4(mod 14)\]
     Mensagem criptografada: 4 $\to$ D\\
   \hline
-    Descriptografar \newline
+    Decifrar \newline
     Chave privada: $(11, 14)$ \newline
     mensagem: ``D'' 
     \[A \to 1\]
