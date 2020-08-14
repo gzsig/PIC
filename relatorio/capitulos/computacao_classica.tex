@@ -1,9 +1,10 @@
 \section{Computação Clássica} 
+\label{classic_comp}
 Entende-se a importância de se compreender a origem e o desenvolvimento da computação clássica para o desenrolar da pesquisa, o que será apresentado em meio a este capítulo.
 
-A computação clássica consiste em computadores que dependem da física clássica para operar. Estes são os computadores tradicionais que usamos em nosso dia-a-dia – seja eles Apple, Samsung, Dell ou qualquer outro –, também classificados como computadores binários, pois processam as instruções a partir de números binários, compostos apenas pelos símbolos “1” e “0”, ligado e desligado, respectivamente. Assim, julga-se importante e de larga relevância ao tema compreender essa representação numérica. 
+A computação clássica consiste em computadores que dependem da física clássica para operar. Estes são os computadores tradicionais que usamos em nosso dia-a-dia – sejam eles Apple, Samsung, Dell ou qualquer outro –, também classificados como computadores binários, pois processam as instruções a partir de números binários, compostos apenas pelos símbolos ``1'' e ``0'', ligado e desligado, respectivamente. Assim, julga-se importante e de larga relevância ao tema compreender essa representação numérica. 
 
-Números binários ou números em base 2 são compostos por apenas dois dígitos, [0...1]. Dessa forma, seu funcionamento é similar ao sistema decimal, ou base 10, que são compostos por dez dígitos, [0...9]. No sistema decimal, é simples contar até nove, porém não existe um simbolo ou dígito para representar o número dez, sendo então representado por dois dígitos, “10”, sendo uma simples lógica de posicionamento. Mais uma vez, após o número “99”, é necessário utilizar da mesma regra para representar o número cem, “100”. Já em base 2, o número zero é representado pelo simbolo ``0'', e o número um por ``1''. O mesmo dilema é enfrentado ao chegar no próximo valor: dois. E então é usada a mesma lógica de posicionamento, em base dois. Desta forma, o número dois é representado por “10”, o três por “11”, quatro por “100” e assim por diante. Portanto, números binários podem se tornar longos e compostos por muitos dígitos que levam o nome de bits. \cite{6} É com base nos \label{bits}bits\footnote{A menor unidade de informação que pode ser armazenada ou transmitida na comunicação de dados.} ligados e desligados que o computador baseia a sua linguagem. Para transforma-lo em base dez é preciso avaliar o valor de cada bit de acordo com a sua posição. 
+Números binários ou números em base 2 são compostos por apenas dois dígitos, {0, 1}. Dessa forma, seu funcionamento é similar ao sistema decimal, ou base 10, que são compostos por dez dígitos, {0; 9}. No sistema decimal, é simples contar até nove, porém não existe um símbolo ou dígito para representar o número dez, sendo então representado por dois dígitos, ``10'', sendo uma simples lógica de posicionamento. Mais uma vez, após o número ``99'', é necessário utilizar da mesma regra para representar o número cem, ``100''. Já em base 2, o número zero é representado pelo símbolo ``0'', e o número um por ``1''. O mesmo dilema é enfrentado ao chegar no próximo valor: dois. E então é usada a mesma lógica de posicionamento, em base dois. Desta forma, o número dois é representado por ``10'', o três por ``11'', quatro por ``100'' e assim por diante. Portanto, números binários podem se tornar longos e compostos por muitos dígitos que levam o nome de bits. \cite{6} É com base nos \label{bits}bits\footnote{A menor unidade de informação que pode ser armazenada ou transmitida na comunicação de dados.} ligados e desligados que o computador baseia a sua linguagem. Para transforma-lo em base dez é preciso avaliar o valor de cada bit de acordo com a sua posição. 
 
 Exemplo: número binário $1011$:
 
@@ -19,7 +20,7 @@ O peso de cada bit de um número binário depende da sua posição relativa ao n
   \item O peso do quarto bit é $bit * 2^3$
 \end{itemize}
 
-A formúla ilustrada acima, pode ser exemplificada em uma fórmula genérica: 
+A fórmula ilustrada acima, pode ser exemplificada em uma fórmula genérica: 
 
 \[= nth\: bit * 2^{n-1}\]
 
@@ -35,16 +36,16 @@ Exemplo: número decimal $4392$:
 \[ 4392 = 4*10^3 + 3*10^2 + 9*10^1 + 2*10^0\]
 \[= nth\: bit * 10^{n-1}\]
 
-Essa regra se mantem verdadeira para qualquer base númerica.
+Essa regra se mantem verdadeira para qualquer base numérica.
 
 \[= nth\: bit * (base)^{n-1}\]
 
 Ao decorrer do texto serão referidos números em base 2, 10 e 16. 
 
 \subsection{A computação clássica e sua evolução}
-Alan Turing, matemático inglês, cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico, publicou o artigo “On Computable Numbers with an Application to the Entscheidungs-problem”\cite{8} em 12 de novembro de 1937, artigo que viria a formar a teoria básica da computabilidade por várias décadas.
+Alan Turing, matemático inglês, cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico, publicou o artigo ``On Computable Numbers with an Application to the Entscheidungs-problem'' \cite{8} em 12 de novembro de 1937, artigo que viria a formar a teoria básica da computabilidade por várias décadas.
 
-O mecanismo abstrato descrito no artigo de Turing fornece os conceitos fundamentais de computadores que outros engenheiros conceberam posteriormente. Na sua essência, uma Máquina de Turing é um dispositivo que manipula símbolos em uma tira de fita de acordo com uma tabela de regras. O cientista forneceu a formalização dos conceitos de “algoritmo” e “computação” na infância da ciência da computação. Apesar de sua simplicidade, uma Máquina de Turing pode ser adaptada para simular a lógica de qualquer algoritmo de computador e é útil para explicar as funções de uma CPU.
+O mecanismo abstrato descrito no artigo de Turing fornece os conceitos fundamentais de computadores que outros engenheiros conceberam posteriormente. Na sua essência, uma Máquina de Turing é um dispositivo que manipula símbolos em uma tira de fita de acordo com uma tabela de regras. O cientista forneceu a formalização dos conceitos de ``algoritmo'' e ``computação'' na infância da ciência da computação. Apesar de sua simplicidade, uma Máquina de Turing pode ser adaptada para simular a lógica de qualquer algoritmo de computador e é útil para explicar as funções de uma CPU.
 
 Apesar dos computadores clássicos serem atualmente descritos como tendo a chamada arquitetura de Von Neumann, acredita-se que o idealizador dessa arquitetura partiu dos modelos matemáticos desenvolvidos por Alan Turing, que incluía o conceito de programa armazenado, originado a partir da construção da Máquina de Turing. Conceito, também encontrado no projeto EDVAC de Von Neumann \cite{9}, que possibilita o armazenamento de instruções e dados na mesma memória, permitindo a manipulação de programas como dados, que se constitui como característica definidora do computador clássico. Assim, pode-se alegar que Turing é o pai do computador já que suas publicações antecedem a arquitetura de Von Neumann, além de existirem razões para se acreditar que este último conhecia os resultados do trabalho de Alan Turing \cite{10}, que podem ter inspirado as suas criações. Outro fator que corrobora para este entendimento, é que Turing foi o primeiro a explorar a idéia de uma máquina de uso geral por meio de sua noção de máquina universal – que constitui a base do computador clássico ao possibilitar o funcionamento da CPU em conjunto com a memória RAM. Ainda, tendo em vista as contribuições do matemático para a construção de uma classe importante de dispositivos de computação, o Bombe – um dispositivo eletromecânico usado pelos criptologistas britânicos para ajudar a decifrar as mensagens secretas criptografadas pela máquina alemã Enigma durante a Segunda Guerra Mundial – e posteriormente o seu design do ACE (Automatic Computing Engine), fica evidente as contribuições de Alan Turing para a invenção do computador moderno. A partir da fala de Turing abaixo, pode-se identificar o ACE como um tipo de realização física da máquina universal.
 
@@ -52,7 +53,7 @@ Apesar dos computadores clássicos serem atualmente descritos como tendo a chama
   ``Some years ago I was researching on what might now be described as an investigation of the theoretical possibilities and limitations of digital computing machines. […] Machines such as the ACE may be regarded as practical versions of this same type of machine.'' \cite{11}
 }
 
-Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e matemático John von Neumann desenvolveu uma arquitetura capaz de executar as seguintes tarefas.
+Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e matemático John von Neumann desenvolveu uma arquitetura que consiste em uma única memória compartilhada para programas e dados, um único acesso à memória, uma unidade aritmética e uma unidade de controle de programa, como visto no diagrama abaixo.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -60,7 +61,7 @@ Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e mat
   \caption{\label{fig:3} Diagrama arquitetura de Von Neumann} 
 \end{figure}
 
-Nessa arquitetura, o cabeçalho passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construidas e executadas em circuitos formados por portas lógicas chamadas de ALU (Arithmetic/Logic Unit).\cite{12}
+Nessa arquitetura, o cabeçote passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construidas e executadas em circuitos formados por portas lógicas chamadas de ALU (Arithmetic/Logic Unit). \cite{12}
 
 Atualmente, a maioria dos computadores modernos são construídos sobre a práxis da arquitetura von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o \href{https://gzsig.io/vm-24bits/}{ASM 24bits} que apresenta as principais características de um processador moderno e permite a sua programação utilizando um Assembly\footnote{Uma linguagem assembly é uma linguagem de programação de baixo nível projetada para um tipo específico de processador. Ele pode ser produzido compilando o código-fonte de uma linguagem de programação de alto nível (como C / C ++), mas também pode ser escrito do zero.} de 20 instruções, sua \href{https://github.com/gzsig/Asm/blob/master/README.md}{Documentação}. Similar à arquitetura de Von Neumann esse emulador é composto por memória e CPU, essa CPU simples possui dois registradores descritos abaixo:
 
@@ -164,7 +165,7 @@ Ao ligar qualquer computador clássico da atualidade, ele passara por algumas et
 
 Quando reiniciamos um computador, ele deve iniciar novamente, sem qualquer noção de um sistema operacional. Ele deve carregar o sistema operacional, de qualquer variante (Mac, Windows, Linux, etc.), a partir de algum dispositivo de armazenamento permanente que está atualmente conectado ao computador seja um cd, um disco rígido, um USB, etc. O ambiente pré-SO oferece poucos serviços de alto nível. Neste estágio, mesmo um sistema de arquivos simples, que possa ler e gravar arquivos lógicos em um disco, seria um luxo. Felizmente, temos disponível o Basic Input/Output Software (BIOS), uma coleção de rotinas de software que são carregadas inicialmente de um chip para a memória e inicializadas quando o computador é ligado. O BIOS fornece detecção automática e controle básico dos dispositivos essenciais do seu computador, como tela, teclado e discos rígidos. Depois que este conclui alguns testes de baixo nível do hardware, principalmente se a memória instalada está funcionando corretamente ou não, ele deve iniciar o sistema operacional já armazenado em um de seus dispositivos. No entanto, precisamos lembrar que o BIOS não pode simplesmente carregar um arquivo que represente seu sistema operacional a partir de um disco, pois o ele não tem noção de um sistema de arquivos. Este deve ler setores específicos de dados (geralmente 512 bytes de tamanho) de localizações físicas específicas dos dispositivos de disco, para carregar do sistema operacional.
 
-Anteriormente, já utilizamos exemplos de números hexadecimais, frequentemente usados na programação de baixo nível. No entanto, ainda não adentramos o por que desse uso. É natural que optemos por usar os números em base 10 já que culturalmente estamos mais acostumados a eles. Georges Ifrah em seu livro, ``The Universal History of Numbers''\cite{14} aponta que:
+Anteriormente, já utilizamos exemplos de números hexadecimais, frequentemente usados na programação de baixo nível. No entanto, ainda não adentramos o por que desse uso. É natural que optemos por usar os números em base 10 já que culturalmente estamos mais acostumados a eles. Georges Ifrah em seu livro, ``The Universal History of Numbers'' \cite{14} aponta que:
 
 ``Traços da origem antropomórfica dos sistemas de contagem podem ser encontrados em muitas línguas. Na língua Ali (África Central), por exemplo, ``cinco'' e ``dez'' são respectivamente moro e mbouna: moro é na verdade a palavra para ``mão'' e mbouna é uma contração de moro (``cinco'') e bouna, que significa ``dois'' (portanto, ``dez'' = ``duas mãos'').
 
