@@ -12,7 +12,7 @@ Assim, pode-se considerar Turing como pai do computador, já que suas publicaç�
   ``Some years ago I was researching on what might now be described as an investigation of the theoretical possibilities and limitations of digital computing machines. […] Machines such as the ACE may be regarded as practical versions of this same type of machine.'' \cite{11}
 }
 
-Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e matemático John von Neumann desenvolveu uma arquitetura que consiste em: uma única memória compartilhada para programas e dados; um único acesso à memória; uma unidade aritmética e; uma unidade de controle de programa - ilustrado no diagrama abaixo.
+Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e matemático John von Neumann desenvolveu uma arquitetura que consiste em uma única memória compartilhada para programas e dados; um único acesso à memória; uma unidade aritmética e uma unidade de controle de programa - ilustrado no diagrama abaixo.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -22,7 +22,7 @@ Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e mat
 
 Nessa arquitetura, o cabeçote passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construídas e executadas em circuitos formados por portas lógicas chamadas de ULA (unidade lógica e aritmética) \cite{12}.
 
-Atualmente, a maioria dos computadores modernos são construídos sobre a práxis da arquitetura von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o \href{https://gzsig.io/vm-24bits/}{ASM 24bits} que permite a sua programação utilizando um Assembly\footnote{Uma linguagem assembly é uma linguagem de programação de baixo nível projetada para um tipo específico de processador. Ele pode ser produzido compilando o código-fonte de uma linguagem de programação de alto nível (como C / C ++), mas também pode ser escrito do zero.} de 20 instruções. Similar à arquitetura de von Neumann esse emulador é composto por memória e CPU, na qual a última possui dois registradores descritos abaixo:
+Atualmente, a maioria dos computadores modernos são construídos sobre a práxis da arquitetura von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o emulador \href{https://gzsig.io/vm-24bits/}{ASM 24bits} que permite a sua programação utilizando um Assembly\footnote{Uma linguagem assembly é uma linguagem de programação de baixo nível projetada para um tipo específico de processador. Ele pode ser produzido compilando o código-fonte de uma linguagem de programação de alto nível (como C / C ++), mas também pode ser escrito do zero.} de 20 instruções. Similar à arquitetura de von Neumann esse emulador é composto por memória e CPU, na qual a última possui dois registradores descritos abaixo:
 
 \vspace{1cm}
 \begin{longtable}{ |p{3cm}||p{11cm}|  }
