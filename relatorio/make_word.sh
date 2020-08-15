@@ -1,1 +1,0 @@
-pandoc main.tex --bibliography=referencias.bib -o main.docx
