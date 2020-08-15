@@ -33,12 +33,13 @@ A chegada dos computadores quânticos mudou esse pensamento. Essas máquinas sã
 Antes de mergulharmos no conceito de criptografia, precisamos saber o que exatamente ela significa. Criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis, decifrando-os mais uma vez.
 
 \subsubsection{Criptografia simétrica}
-Para criptografar e descriptografar corretamente nossos dados, precisamos de uma chave (que determina a saída da nossa cifra). Na criptografia simétrica, a chave usada para criptografar e decifrar os dados é a mesma.
+Para criptografar e descriptografar corretamente nossos dados, precisamos de uma chave (que determina a saída da nossa cifra).  Na criptografia simétrica,  a chave usada para criptografar e decifrar os dados é a mesma, o que pode constituir em um problema de segurança. De forma a compreender este problema, pode-se refletir sobre como enviar dados com segurança em um ambiente hostil como a Internet. Nesse caso, se a mesma chave for usada para criptografar e decifrar dados, primeiro precisaríamos  enviar  a  chave  de  descriptografia  para  estabelecer  uma  conexão segura.  Porém, isso significa que estaríamos enviando a chave por uma conexão insegura, e assim ela poderia ser interceptada e usada por terceiros, se constituindo em um grande problema de segurança. 
+
 
 \subsubsection{Criptografia assimétrica}
-A criptografia assimétrica surge para resolver o problema da simétrica – se for preciso enviar dados com segurança em um ambiente hostil, como a Internet, como faria? Se a mesma chave for usada para criptografar e decifrar dados, primeiro precisaríamos enviar a chave de descriptografia para estabelecer uma conexão segura. Mas isso significa que estaríamos enviando a chave por uma conexão insegura, e assim a chave pode ser interceptada e usada por terceiros! Como contornar isso?
+A criptografia assimétrica surge para resolver o problema da simétrica, possibilitando uma forma segura de compartilhamento de dados.
 
-Para exemplificar, usaremos um cadeado que possui três estados: A (bloqueado), B (desbloqueado) e C (bloqueado). E tem duas chaves distintas. A primeira pode girar apenas no sentido horário (de A a B a C) e a segunda pode girar apenas no sentido anti-horário (de C a B a A).
+Para exemplificar esse novo formato, usaremos um cadeado que possui três estados – A (bloqueado), B (desbloqueado) e C (bloqueado) – E duas chaves distintas – A primeira pode girar apenas no sentido horário (de A a B a C) e a segunda pode girar apenas no sentido anti-horário (de C a B a A).
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -53,8 +54,7 @@ A segunda chave, sua chave ``pública'': Pode ser distribuída para qualquer pes
 Colocando isso em prática, imagine que você queira enviar um documento privado para o usuário. Você coloca o documento na caixa e usa uma cópia da chave pública dele para bloqueá-lo. Lembre-se de que a chave pública dele gira apenas no sentido anti-horário, e você a coloca na posição A. Agora a caixa está bloqueada. A única chave que pode passar de A para B é a chave privada, a que ele guardou para si.
 
 \subsubsection{Funções de hash}
-Uma função de hash, diferente da criptografia simétrica / assimétrica, é uma função unidirecional. Você pode criar um hash a partir de alguns dados, mas não há como reverter o processo. Como tal, não é uma maneira útil de armazenar dados, mas é uma maneira útil de verificar a integridade de alguns dados.
-Uma função de hash recebe alguns dados como entrada e gera uma string aparentemente aleatória (mas nem tanto) que sempre terá o mesmo comprimento. Uma função de hash ideal cria valores exclusivos para diferentes entradas. A mesma entrada exata sempre produzirá exatamente o mesmo hash - e é por isso que podemos usá-la para verificar a integridade dos dados.
+Uma função de hash, diferentemente da criptografia simétrica / assimétrica, é  uma função unidirecional.  Você  pode criar um hash a partir de alguns dados, mas não há como reverter o processo. Portanto não sendo considerado uma aneira útil de armazenar dados, mas sim para verificar a integridade dos mesmos.  Uma função de hash recebe alguns dados como entrada e gera uma string aparentemente aleatória (mas nem tanto) que sempre terá o mesmo comprimento. Uma função de hash ideal cria valores exclusivos para diferentes entradas. A mesma entrada exata sempre produzirá exatamente o mesmo hash - e é por isso que podemos usá-la para verificar a integridade dos dados.
 
 \subsection{Criando chave publica e privada RSA – Rivest Shamir Adleman}
 
