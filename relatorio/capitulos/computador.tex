@@ -3,9 +3,9 @@ Tendo em vista a metodologia de Project based learning – em que se incentiva a
 
 Ainda, tem-se que a implementação física dos modelos contribuirá para academia, uma vez que os professores poderão usufruir dos mesmos como ferramentas didática, agregando para a compreensão da teoria ao aproximá-la da prática. 
 
-No entanto, apesar desse capítulo ter sido reservado para descrever o passo a passo de como desenvolver um computador clássico apenas com portas logicas simples, devido a alguns problemas esclarecidos na seção \ref{problems} não foi possível concluí-lo. Porém, de forma a manter a metodologia de Project based Learning, foi desenvolvido um sistema operacional que permitiu colocar em prática o conteúdo estudado ao implementar um processo de boot, usando o assembly intelx86. Além disso pode-se produzir um emulador de assembly, de forma didática e publicado na web,  a fim de contribuir com material para academia. Ademais, sugere-se que a proposta original seja adiada e implementada em um trabalho futuro. 
+No entanto, apesar desse capítulo ter sido reservado para descrever o passo a passo de como desenvolver um computador clássico apenas com portas lógicas simples, devido a alguns problemas esclarecidos na seção \ref{problems} não foi possível concluí-lo. Porém, de forma a manter a metodologia de Project based Learning, foi desenvolvido um sistema operacional que permitiu colocar em prática o conteúdo estudado ao implementar um processo de boot, usando o assembly intelx86. Além disso pode-se produzir um emulador de assembly, de forma didática e publicado na web,  a fim de contribuir com material para academia. Ademais, sugere-se que a proposta original seja adiada e implementada em um trabalho futuro. 
 
-Apesar desta alteração no projeto, optou-se por compartilhar o conteúdo já produzido em meio ao início do processo de construção. 
+Apesar desta alteração no projeto, optou-se por compartilhar o conteúdo já produzido no início do processo de construção. 
 
 \subsection{Módulos}
 Para facilitar a compreensão e também o desenvolvimento do computador, este capítulo será dividido em alguns subcapítulos, cada qual abordando uma parte do computador.
@@ -23,13 +23,13 @@ A parte da unidade lógica aritmética (ALU) de uma CPU geralmente é capaz de e
 A memória de acesso aleatório (RAM) armazena o programa que o computador está executando, bem como todos os dados que o programa precisa. Nosso computador de breadboard utiliza endereços de 4 bits, o que significa que ele terá apenas 16 bytes de RAM, limitando o tamanho e a complexidade dos programas que poderá executar.
 
 \subsubsection{Program counter}
-O contador do programa (Program counter) conta em binário para acompanhar qual instrução o computador está executando no momento.
+O contador do programa (Program counter) conta em binário para acompanhar a instrução que o computador está executando no momento.
 
 \subsubsection{Output register}
 O registrador de saída é semelhante a qualquer outro registrador (como os registradores A e B), exceto que, em vez de exibir seu conteúdo em binário em 8 LEDs, ele exibe seu conteúdo de forma decimal em um display de 7 segmentos, o que requer uma lógica complexa.
 
 \subsubsection{CPU control logic}
-A lógica de controle é o coração da CPU. É o que define os códigos de operação (opcode) que o processador reconhece e o que acontece quando ele executa cada instrução.
+A lógica de controle é o coração da CPU, é o que define os códigos de operação (opcode) que o processador reconhece e o que acontece quando ele executa cada instrução.
 
 \subsubsection{Materiais Necessários}
 

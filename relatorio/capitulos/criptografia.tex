@@ -1,9 +1,9 @@
 \section{Criptografia}
 Dentre as mudanças e impactos possíveis para a computação, a computação quântica possivelmente irá impactar diretamente a área de criptografia. Isso porque, os métodos criptográficos até então existentes podem ser quebrados através de estratégias de força bruta (que são algoritmos que buscam solução por tentativa e erro). Portanto, se o computador quântico pode executar diversas tarefas de forma exponencial, então, esse métodos criptográficos atuais se tornam obsoletos, o que gera um impacto direto na sociedade digital.
 
-Todas as transações bancárias, correspondência civil e militar, diagnósticos médicos, votos em democracias, em geral todas as formas de interações sociais que demandam alguma política, mínima que seja, de privacidade serão afetadas. Tão logo, a computação quântica pode acirrar mais ainda o paradigma das questões privadas e sociais.
+Todas as transações bancárias, correspondência civil e militar, diagnósticos médicos, votos em democracias, todas as formas de interação social que demandam alguma política de privacidade (por menor que sejam) serão afetadas. Portanto a computação quântica pode acirrar mais ainda o paradigma das questões privadas e sociais.
 
-Nesse capítulo, é apresentado uma introdução a área de criptografia, a fim de exemplificar em quais premissas toda área repousa, por isso, será apresentado a estratégia de criptografia utilizando chaves pública-privada.
+Esse capítulo apresenta uma introdução à área de criptografia, a fim de exemplificar em que premissas toda área repousa, por isso, será apresentada a estratégia de criptografia utilizando chaves pública-privada.
 
 Conforme definido por Bruce Schneier \textit{``The art and science of keeping messages secure is cryptography […].''} \cite{13} Embora a criptografia seja considerada fundamental em nossas vidas digitais, ela não está especificamente relacionada à computação. A criptografia existe há milênios.
 
@@ -11,7 +11,7 @@ Na segurança cibernética, há uma série de preocupações quando se trata de 
 
 \textbf{A confidencialidade} significa que nossos dados não podem ser acessados / lidos por usuários não autorizados.
 
-\textbf{A integridade} do dado diz respeito à originalidade na qual os dados chegam a nós, estando 100\% intactos, sem terem sido modificados – seja por um ato malicioso, perda de dados ou por algum outro fator. 
+\textbf{A integridade} do dado diz respeito à originalidade com a qual os dados chegam a nós, estando 100\% intactos, sem terem sido modificados – seja por um ato malicioso, perda de dados ou por algum outro fator. 
 
 \textbf{A disponibilidade} se refere à acessibilidade dos dados quando necessário.
 
@@ -27,7 +27,7 @@ Temos receio que os computadores quânticos sejam capazes de decifrar certos có
 
 Esses sistemas de criptografia não são inquebráveis e sua segurança se baseia na enorme quantidade de tempo que um computador clássico levaria para fazer o trabalho. Os métodos modernos de criptografia são projetados para que a decodificação demore tanto tempo que se tornem praticamente inquebráveis.
 
-A chegada dos computadores quânticos mudou esse pensamento. Essas máquinas são muito mais poderosas que os computadores clássicos, tornando possível o rompimento desses códigos com facilidade, já que realizam contas matemáticas de forma mais eficiente e significativamente mais rápido que os computadores clássicos.
+A chegada dos computadores quânticos mudou esse pensamento. Essas máquinas são muito mais poderosas que os computadores clássicos, tornando possível o rompimento desses códigos com facilidade, já que realizam contas matemáticas de forma mais eficiente e significativamente mais rápida que os computadores clássicos.
 
 \subsection{Conceitos básicos de criptografia}
 Antes de mergulharmos no conceito de criptografia, precisamos saber o que exatamente ela significa. Criptografar uma mensagem significa torná-la ilegível para partes não autorizadas usando uma cifra (o método específico para fazer isso). Descriptografar a mensagem significa reverter o processo e tornar os dados legíveis, decifrando-os mais uma vez.
@@ -47,9 +47,9 @@ Para exemplificar esse novo formato, usaremos um cadeado que possui três estado
   \caption{\label{fig:5} Ilustração da posição das chaves} 
 \end{figure}
 
-Ao criptografar uma mensagem, o usuário pega a primeira chave e guarda para si mesmo. Essa chave, sua chave ``privada'' - porque apenas ele a possui.
+Ao criptografar uma mensagem, o usuário pega a primeira chave e guarda para si mesmo. Essa chave é sua chave ``privada'' - porque apenas ele a possui.
 
-A segunda chave, sua chave ``pública'': Pode ser distribuída para qualquer pessoa. Assim, o usuário tem sua chave privada que pode mudar de A para B para C. E todo os outros tem sua chave pública que pode mudar de C para B para A.
+A segunda chave é sua chave ``pública'': Pode ser distribuída para qualquer pessoa. Assim, o usuário tem sua chave privada que pode mudar de A para B para C. E todo os outros tem sua chave pública que pode mudar de C para B para A.
 
 Colocando isso em prática, imagine que você queira enviar um documento privado para o usuário. Você coloca o documento na caixa e usa uma cópia da chave pública dele para bloqueá-lo. Lembre-se de que a chave pública dele gira apenas no sentido anti-horário, e você a coloca na posição A. Agora a caixa está bloqueada. A única chave que pode passar de A para B é a chave privada, a que ele guardou para si.
 
