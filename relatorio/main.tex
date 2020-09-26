@@ -1,5 +1,6 @@
 % document type
 \documentclass[a4paper,12pt]{article}
+% show name on citation
 \usepackage[round]{natbib}
 \bibliographystyle{plainnat}
 \usepackage[utf8]{inputenc}
@@ -21,8 +22,8 @@
 \usepackage[dvipsnames]{xcolor}
 \newcommand\myshade{}
 \colorlet{mylinkcolor}{black}
-\colorlet{mycitecolor}{OliveGreen}
-\colorlet{myurlcolor}{MidnightBlue}
+\colorlet{mycitecolor}{MidnightBlue}
+\colorlet{myurlcolor}{blue}
 % set color for each type of link
 \hypersetup{
   colorlinks = true,
@@ -68,13 +69,14 @@
   \listoffigures
   \newpage
   \input{capitulos/introducao}
+  \input{capitulos/metodologia_empregada}
   \input{capitulos/computacao_classica}
   \input{capitulos/computacao_quantica}
   \input{capitulos/computador}
   \input{capitulos/simulador}
   \input{capitulos/criptografia}
   \input{capitulos/proximos_passos}
-  \input{capitulos/impactos_sociais.tex}
+  \input{capitulos/impactos_sociais}
   \input{capitulos/conclusao}
   \newpage
   \bibliography{referencias}
