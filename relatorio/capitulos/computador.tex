@@ -28,20 +28,74 @@ Para facilitar a compreensão e também o desenvolvimento do computador, este ca
 \subsubsection{Clock}
 O clock do computador é uma parte essencial para o seu funcionamento. Este tem a função de sincronizar todas as operações. A ação mais rápida que o computador consegue executar é equivalente a uma vibração do seu clock.
 
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_clock.png}}
+  \caption{\label{schematics_clock} Esquema do Clock} 
+\end{figure}
+
 \subsubsection{Registradores}
 A maioria das CPUs possuem vários registradores que armazenam pequenas quantidades de dados processados pela CPU. Em nossa CPU de breadboard, criaremos três registradores de 8 bits: A, B e IR. Os registradores A e B são para uso geral. Já o IR (instruction register), apesar de funcionar da mesma forma, é usado para armazenar a instrução atual que está sendo executada.
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_a_register.png}}
+  \caption{\label{schematics_a_register} Esquema do Registrador A} 
+\end{figure}
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_b_register.png}}
+  \caption{\label{schematics_b_register} Esquema do Registrador B} 
+\end{figure}
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_ir.png}}
+  \caption{\label{schematics_ir} Esquema do Registrador IR} 
+\end{figure}
 
 \subsubsection{Unidade logica Aritmetica  (ULA)}
 A parte da unidade lógica aritmética (ULA) de uma CPU geralmente é capaz de executar várias operações aritméticas, bit a bit e de comparação em números binários. Em nossa CPU de breadboard, a ALU pode apenas adicionar e subtrair. Ele está conectado aos registradores A e B e gera a soma de A + B ou a diferença de A-B.
 
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_alu.png}}
+  \caption{\label{schematics_alu} Esquema da ULA} 
+\end{figure}
+
 \subsubsection{Memoria (RAM)}
 A memória de acesso aleatório (RAM) armazena o programa que o computador está executando, bem como todos os dados que o programa precisa. Nosso computador de breadboard utiliza endereços de 4 bits, o que significa que ele terá apenas 16 bytes de RAM, limitando o tamanho e a complexidade dos programas que poderá executar.
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_mar.png}}
+  \caption{\label{schematics_mar} Esquema da MAR} 
+\end{figure}
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_ram.png}}
+  \caption{\label{schematics_ram} Esquema da RAM} 
+\end{figure}
 
 \subsubsection{Contador}
 O contador do programa (Program counter) conta em binário para acompanhar a instrução que o computador está executando no momento.
 
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_pc.png}}
+  \caption{\label{schematics_pc} Esquema do Contador} 
+\end{figure}
+
 \subsubsection{Registrador de output}
 O registrador de saída é semelhante a qualquer outro registrador (como os registradores A e B), exceto que, em vez de exibir seu conteúdo em binário em 8 LEDs, ele exibe seu conteúdo de forma decimal em um display de 7 segmentos, o que requer uma lógica complexa.
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_output.png}}
+  \caption{\label{schematics_output} Esquema da MAR} 
+\end{figure}
 
 \subsubsection{Unidade Central de Processamento (CPU)}
 A lógica de controle é o coração da CPU, é o que define os códigos de operação (opcode) que o processador reconhece e o que acontece quando ele executa cada instrução.
