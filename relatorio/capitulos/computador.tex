@@ -12,7 +12,7 @@ A implementação deste computador já foi iniciada, porém, há sérias desconf
 
 O projeto do computador aqui referenciado pode ser dividido em diversas partes, pois como qualquer computador clássico convencional, cada parte especifica contribui a sua maneira para a operacionalidade de todo o sistema. Essas partes são separados em módulos, os quais são ilustrados na figura \ref{breadboard_computer}, sendo que esses módulos fomam a ULA (Unidade Lógica Aritmética) e a UC (Unidade de Controle) – conforme descrito na arquitetura von Neumann (capítulo \ref{classic_comp}):
 
-Conforme pode ser observado na figura \ref{breadboard_computer}, os módulos são organizados como: Clock, Registradores, cccc.
+Conforme pode ser observado na figura \ref{breadboard_computer}, os módulos são organizados como: Clock, Registradores, Unidade Logica Aritmética, Memoria RAM, Contador e Registrador de Output.
 
 A seguir, cada seção traz a funcionalidade e atual implementação de cada uma das partes, módulos, do computador.
 
@@ -26,7 +26,7 @@ A seguir, cada seção traz a funcionalidade e atual implementação de cada uma
 Para facilitar a compreensão e também o desenvolvimento do computador, este capítulo será dividido em alguns subcapítulos, cada qual abordando uma parte do computador.
 
 \subsubsection{Clock}
-O clock do computador é uma parte essencial para o seu funcionamento. Este tem a função de sincronizar todas as operações. A ação mais rápida que o computador consegue executar é equivalente a uma vibração do seu clock.
+O clock do computador é uma parte essencial para o seu funcionamento. Este tem a função de sincronizar todas as operações. A ação mais rápida que o computador consegue executar é equivalente a uma vibração do seu clock. No módulo desenvolvido, três clocks se fazem presentes. Assim o computador pode operar em três modos distintos, sendo eles, controlado por um potenciômetro – vibrando em uma frequência constante –, controlado pelo operador – a cada click no botão o modulo emite uma vibração –, e sempre ligado – assim passando o mais rápido possível por cada operação.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -35,7 +35,7 @@ O clock do computador é uma parte essencial para o seu funcionamento. Este tem 
 \end{figure}
 
 \subsubsection{Registradores}
-A maioria das CPUs possuem vários registradores que armazenam pequenas quantidades de dados processados pela CPU. Em nossa CPU de breadboard, criaremos três registradores de 8 bits: A, B e IR. Os registradores A e B são para uso geral. Já o IR (instruction register), apesar de funcionar da mesma forma, é usado para armazenar a instrução atual que está sendo executada.
+Assim, como o clock é essencial para o funcionamento do computador, os registradores também são, estes são como variáveis, mas em hardware. A maioria das CPUs possuem vários registradores que armazenam pequenas quantidades de dados. Em nossa CPU de breadboard, estão sendo desenvolvido três registradores de 8 bits: A, B e IR. Os registradores A e B são para uso geral – armazenamento de dados (de forma numérica). Já o IR (instruction register), apesar de funcionar da mesma forma, é usado para armazenar a instrução atual que está sendo executada, ou seja a instrução que foi chamada através da vibração mais recente do clock.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -55,8 +55,8 @@ A maioria das CPUs possuem vários registradores que armazenam pequenas quantida
   \caption{\label{schematics_ir} Esquema do Registrador IR} 
 \end{figure}
 
-\subsubsection{Unidade logica Aritmetica  (ULA)}
-A parte da unidade lógica aritmética (ULA) de uma CPU geralmente é capaz de executar várias operações aritméticas, bit a bit e de comparação em números binários. Em nossa CPU de breadboard, a ALU pode apenas adicionar e subtrair. Ele está conectado aos registradores A e B e gera a soma de A + B ou a diferença de A-B.
+\subsubsection{Unidade Logica Aritmética  (ULA)}
+Para o funcionamento de um computador, é preciso que dados sejam manipulados, assim chegamos ao modulo de lógica aritmética, conhecida como unidade lógica aritmética (ULA) de uma CPU, esta geralmente é capaz de executar várias operações aritméticas, bit a bit e de comparação em números binários. Em nossa CPU de breadboard, a ULA pode apenas adicionar e subtrair, a final essa implementação é apenas para fins acadêmicos e não tem a necessidade de ser performática em termos de eficiência computacional. Ele é conectada aos registradores A e B sendo capaz de gerar a soma de A + B ou a diferença de A-B.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -65,7 +65,7 @@ A parte da unidade lógica aritmética (ULA) de uma CPU geralmente é capaz de e
 \end{figure}
 
 \subsubsection{Memoria (RAM)}
-A memória de acesso aleatório (RAM) armazena o programa que o computador está executando, bem como todos os dados que o programa precisa. Nosso computador de breadboard utiliza endereços de 4 bits, o que significa que ele terá apenas 16 bytes de RAM, limitando o tamanho e a complexidade dos programas que poderá executar.
+Computadores em geral tem 2 memorias, o HD ou SSD e a memoria RAM, o HD (Hard Drive) e SSD (Solid State Drive) tem com objetivo armazenar dados de forma permanente, armazenam os dados em um espaço físico onde seu acesso é mais lento, porem, mesmo com o computador desligado os dados são guardados serão confiáveis após o computador ser religado. Já a memória de acesso aleatório, RAM, é uma memoria eletróncia e armazena dados apenas se o computador estiver ligado, porem consegue acessa-los de forma significativamente mais rápida. Um dos objetivos principais dessa memoria é armazenar o programa que o computador está executando no exato momento, bem como todos os dados que o programa precisa. Para o computador de breadboard que esta sendo desenvolvido, a memoria RAM utiliza endereços de 4 bits, o que significa que ele terá apenas 16 bytes de RAM, limitando o tamanho e a complexidade dos programas que poderão ser executados.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -88,8 +88,8 @@ O contador do programa (Program counter) conta em binário para acompanhar a ins
   \caption{\label{schematics_pc} Esquema do Contador} 
 \end{figure}
 
-\subsubsection{Registrador de output}
-O registrador de saída é semelhante a qualquer outro registrador (como os registradores A e B), exceto que, em vez de exibir seu conteúdo em binário em 8 LEDs, ele exibe seu conteúdo de forma decimal em um display de 7 segmentos, o que requer uma lógica complexa.
+\subsubsection{Registrador de Output}
+O registrador de saída é um registrador especial para esse computador pois como não temos acesso a um monitor, este possibilita a leitura de dados de forma fácil e comum para seu usuário.  Este é semelhante a qualquer outro registrador como os registradores A, B e IR, porem, em vez de exibir seu conteúdo em binário através de 8 LEDs, este exibe seu conteúdo de forma decimal em um display de 7 segmentos. Assim é um dos módulos mais difíceis a ser desenvolvido pois requer uma lógica complexa mas entrega grande satisfação.
 
 \vspace{1cm}
 \begin{figure}[H] \centering 
@@ -97,8 +97,8 @@ O registrador de saída é semelhante a qualquer outro registrador (como os regi
   \caption{\label{schematics_output} Esquema do Registrador Output} 
 \end{figure}
 
-\subsubsection{Unidade Central de Processamento (CPU)}
-A lógica de controle é o coração da CPU, é o que define os códigos de operação (opcode) que o processador reconhece e o que acontece quando ele executa cada instrução.
+% \subsubsection{Unidade Central de Processamento (CPU)}
+% A lógica de controle é o coração da CPU, é o que define os códigos de operação (opcode) que o processador reconhece e o que acontece quando ele executa cada instrução.
 
 \subsection{Considerações Finais}
 
