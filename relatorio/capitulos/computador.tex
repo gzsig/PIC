@@ -10,7 +10,7 @@ Esta pesquisa se propõe a construir um computador clássico (ilustrado a baixo)
 
 A implementação deste computador já foi iniciada, porém, há sérias desconfianças de que o prazo ainda restante seja adequado para sua finalização, maiores detalhes sobre o tema são apresentados no cronograma \ref{updated_timeline}. Apesar de todos os esforços, ainda que com prazos apertados, para o cumprimento dessa construção, ainda, tem-se que a implementação física dos modelos contribui para a academia, uma vez que professores poderão usufruir dos mesmos como ferramenta didática, agregando para a compreensão da teoria ao aproximá-la da prática.
 
-O projeto do computador aqui referenciado pode ser dividido em diversas partes, pois como qualquer computador clássico convencional, cada parte especifica contribui a sua maneira para a operacionalidade de todo o sistema. Essas partes são separados em módulos, os quais são ilustrados na figura \ref{breadboard_computer}, sendo que esses módulos fomam a ULA (Unidade Lógica Aritmética) e a UC (Unidade de Controle) – conforme descrito na arquitetura von Neumann (capítulo \ref{classic_comp}):
+O projeto do computador aqui referenciado pode ser dividido em diversas partes, pois como qualquer computador clássico convencional, cada parte especifica contribui a sua maneira para a operacionalidade de todo o sistema. Essas partes são separados em módulos, os quais são ilustrados na figura \ref{breadboard_computer}, sendo que esses módulos formam a ULA (Unidade Lógica Aritmética) e a UC (Unidade de Controle) – conforme descrito na arquitetura Von Neumann (capítulo \ref{classic_comp}):
 
 Conforme pode ser observado na figura \ref{breadboard_computer}, os módulos são organizados como: Clock, Registradores, Unidade Logica Aritmética, Memoria RAM, Contador e Registrador de Output.
 
@@ -34,6 +34,12 @@ O clock do computador é uma parte essencial para o seu funcionamento. Este tem 
   \caption{\label{schematics_clock} Esquema do Clock} 
 \end{figure}
 
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{module_clock.png}}
+  \caption{\label{module_clock} Modulo do clock implementado em breadboard} 
+\end{figure}
+
 \subsubsection{Registradores}
 Assim, como o clock é essencial para o funcionamento do computador, os registradores também são, estes são como variáveis, mas em hardware. A maioria das CPUs possuem vários registradores que armazenam pequenas quantidades de dados. Em nossa CPU de breadboard, estão sendo desenvolvido três registradores de 8 bits: A, B e IR. Os registradores A e B são para uso geral – armazenamento de dados (de forma numérica). Já o IR (instruction register), apesar de funcionar da mesma forma, é usado para armazenar a instrução atual que está sendo executada, ou seja a instrução que foi chamada através da vibração mais recente do clock.
 
@@ -53,6 +59,12 @@ Assim, como o clock é essencial para o funcionamento do computador, os registra
 \begin{figure}[H] \centering 
   \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{schematics_ir.png}}
   \caption{\label{schematics_ir} Esquema do Registrador IR} 
+\end{figure}
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.7\textwidth]{module_register.png}}
+  \caption{\label{module_register} Modulo dos registradores implementado em breadboard (em andamento)} 
 \end{figure}
 
 \subsubsection{Unidade Logica Aritmética  (ULA)}
