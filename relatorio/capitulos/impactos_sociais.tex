@@ -10,6 +10,9 @@ Em outubro de 2019, o Google revelou sua bem-sucedida experiência “Quantum Su
 \subsection{Criptografia \& Privacidade}
 A criptografia atual é baseada em matemática e decodificação, sendo essa é uma tarefa bastante complicada para computadores clássicos. No entanto,os computadores quânticos a executam com grande facilidade. O algoritmo de fatoração de Shor\footnote{Um algoritmo de computador quântico de tempo polinomial para fatoração de número inteiro. Informalmente, resolve o seguinte problema: Dado um número inteiro, encontre seus fatores primos. Foi inventado em 1994 pelo matemático americano Peter Shor} é de particular importância para essa temática, pois significa que a criptografia de chave pública pode ser facilmente quebrada. Tendo em vista a “falha” na criptografia, o tema de privacidade vem à tona, sendo abordado no atual capítulo como esse fenômeno se comporta em três situações: negócios privados, transações e política.
 
+\subsubsection{Criptografia}
+Muitos criptosistemas são construídos usando problemas matemáticos mais difíceis do que um computador clássico é capaz de resolver. No entanto, um computador quântico tem a capacidade computacional de encontrar soluções para os algoritmos criptográficos em uso hoje. Problemas criptográficos que usam fatoração são excelentes exemplos de problemas que podem ser resolvidos com um computador quântico, porque tanto a entrada quanto a saída são, cada uma, um único número. Observe que os números usados na chave são enormes, portanto, uma quantidade significativa de qubits é necessária para calcular o resultado. A capacidade de um computador quântico de resolver algoritmos criptográficos é um problema extremamente sério, e já existem empresas – como a Microsoft por exemplo – que já estão trabalhando em protocolos de criptografia segura quântica para substituir aqueles que serão vulneráveis a ataques quânticos.
+
 \subsubsection{Negócios privados}
 Empresas modernas de forma geral armazenam e gerenciam a maioria de suas informações pessoais e confidenciais de forma online, em uma nuvem com conexão ininterrupta à web. Assim, é quase impossível conduzir tais informações de forma a evitar que os dados caiam nas mãos de terceiros. Por  esse motivo a criptografia está sendo incorporada aos planos de segurança de dados em nuvem de empresas, mantendo seus dados privados e seguros, independentemente de sua localização. 
 
@@ -42,8 +45,17 @@ e para minimizar isso, o parâmetro $ k $ deve ser escolhido para tornar esses d
 
 Na verdade, isso é uma melhoria em relação ao clássico fator de trabalho de $ n^2 $
 
-\subsubsection{melhor tomada de decisão de forma não empírica}
+\subsubsection{Machine Learning}
+Em geral, os computadores quânticos não são desafiados pela quantidade de computação necessária para resolver um problema. Em vez disso, o desafio é obter um número limitado de respostas e restringir o tamanho das entradas. Por causa disso, os problemas de Machine Learning (ML) muitas vezes não funcionam perfeitamente devido à grande quantidade de dados de entrada. No entanto, os problemas de otimização são um tipo de problema de ML que podem ser adequado para um computador quântico.
+
+Imagine que você tem uma grande fábrica e o objetivo é maximizar a produção. Para fazer isso, cada processo individual precisaria ser otimizado por conta própria, bem como comparado com o todo. As configurações possíveis de todos os processos que precisam ser considerados são exponencialmente maiores do que o tamanho dos dados de entrada. Com um espaço de busca exponencialmente maior do que os dados de entrada, problemas de otimização são viáveis para um computador quântico.
+  
+Além disso, devido aos requisitos exclusivos da programação quântica, um dos benefícios inesperados do desenvolvimento de algoritmos quânticos é a identificação de novos métodos para resolver problemas. Em muitos casos, esses novos métodos podem ser trazidos de volta à computação clássica, produzindo melhorias significativas. A implementação dessas novas técnicas é o que chamamos de algoritmos inspirados no quantum.
+
 \subsubsection{Robótica – tomar SEMPRE a melhor decisão}
+Nos dias atuais, decisões são tomadas de forma não otimizadas, e ainda, muitas vezes baseadas em “achismo”. Nesse aspecto a nova tecnologia baseada na física quântica promete grandes avanços. 
+
+
 \subsubsection{Vale pena enfrentar uma decisão computacional?}
 
 \subsection{Considerações finais - incompleto}
