@@ -7,7 +7,7 @@ Dispositivos têm sido usados para auxiliar na computação por milhares de anos
 
 Como já mencionado anteriormente, Alan Turing – matemático inglês, cientista da computação, lógico, criptoanalista, filósofo e biólogo teórico – publicou o artigo ``On Computable Numbers with an Application to the Entscheidungs-problem'' \cite{8} em 12 de novembro de 1937, artigo que viria a constituir a teoria básica da computabilidade, que se faz presente até hoje. 
 
-O mecanismo abstrato descrito no artigo de Turing fornece os conceitos fundamentais de computadores que outros engenheiros conceberam posteriormente. Na sua essência, uma Máquina de Turing é um dispositivo que manipula símbolos em uma tira de fita de acordo com uma tabela de regras, funcionamento que possibilitou a formalização dos conceitos de ``algoritmo'' e ``computação''. Ainda, apesar da simplicidade da Máquina de Turing, ela pode ser adaptada para simular a lógica de qualquer algoritmo de computador.
+O mecanismo abstrato descrito no artigo de Turing fornece os conceitos fundamentais de computadores que outros engenheiros conceberam posteriormente. Na sua essência, uma Máquina de Turing é um dispositivo que manipula símbolos em uma tira de fita de acordo com uma tabela de regras, funcionamento que possibilitou a implementação dos conceitos de ``algoritmo'' e ``computação''. Ainda, apesar da simplicidade da Máquina de Turing, ela pode ser adaptada para simular a lógica de qualquer algoritmo de computador.
 
 Apesar de hoje se ter a compreensão das contribuições de Alan Turing para a base da computação, os computadores clássicos são atualmente descritos como tendo a chamada arquitetura Von Neumann. No entanto acredita-se que o idealizador dessa arquitetura partiu dos modelos matemáticos desenvolvidos por Turing \cite{10}, que incluía o conceito de programa armazenado, originado a partir da construção da Máquina de Turing. Conceito, também encontrado no projeto EDVAC \cite{9} de Von Neumann, que possibilita o armazenamento de instruções e dados na mesma memória, permitindo a manipulação de programas como dados, que se constitui como característica do computador clássico.  
 
@@ -29,7 +29,13 @@ Por fim, entende-se que baseado na teoria da máquina de Turing, o físico e mat
 
 Na arquitetura Von Neumann, mencionada acima, o cabeçote passa a ser uma CPU (Central Processing Unit), a fita se transforma em memória RAM e as operações são construídas e executadas em circuitos formados por portas lógicas chamadas de ULA (unidade lógica e aritmética) \cite{12}.
 
-Atualmente, a maioria dos computadores modernos são construídos sobre a práxis da arquitetura Von Neumann. A fim de simular um processador moderno de forma didática, foi elaborado o emulador \href{https://gzsig.io/vm-24bits/}{ASM 24bits} que permite a sua programação utilizando um Assembly\footnote{Uma linguagem assembly é uma linguagem de programação de baixo nível projetada para um tipo específico de processador. Ele pode ser produzido compilando o código-fonte de uma linguagem de programação de alto nível (como C / C ++), mas também pode ser escrito do zero.} de 20 instruções. Similar à arquitetura Von Neumann esse emulador é composto por memória e CPU, na qual a última possui dois registradores descritos abaixo:
+Atualmente, a maioria dos computadores modernos são construídos sobre a práxis da arquitetura Von Neumann \cite{2}. A fim de simular um processador moderno dentro desse projeto de forma didática, foi elaborado o emulador \href{https://gzsig.io/vm-24bits/}{ASM 24bits} que permite a sua programação utilizando um Assembly\footnote{Uma linguagem assembly é uma linguagem de programação de baixo nível projetada para um tipo específico de processador. Ele pode ser produzido compilando o código-fonte de uma linguagem de programação de alto nível (como C / C ++), mas também pode ser escrito do zero.} de 20 instruções. Similar à arquitetura Von Neumann esse emulador é composto por memória e CPU, na qual a última possui dois registradores descritos abaixo:
+
+\vspace{1cm}
+\begin{figure}[H] \centering 
+  \makebox[\textwidth][c]{\includegraphics[width=0.6\textwidth]{von_neumann_architecture.png}}
+  \caption{\label{von_neumann_architecture} Diagrama arquitetura Von Neumann} 
+\end{figure}
 
 \vspace{1cm}
 \begin{longtable}{ |p{3cm}||p{11cm}|  }
@@ -127,19 +133,42 @@ Dentro da CPU, está a unidade lógica aritmética (ULA), um circuito digital us
 
 Utilizando-se dessas instruções é possível construir uma sequência de códigos, criando programas, essa é a linguagem de mais baixo nível que se pode codificar, linguagem Assembly.
 
+Um exemplo de programa pode ser o seguinte código
+
+\begin{verbatim}
+  in
+  stor o2c
+  stor o2e
+  loop:
+  sub 0x0001
+  jz fim
+  stor o2c
+  mulm o2e
+  stor o2e
+  load o2c
+  jnz loop
+  fim:
+  load o2e
+  end
+  o2c:
+  o2e:
+\end{verbatim}
+
 \subsection{Assembly}
 
 É a partir das instruções pertencentes à ULA que se compõe uma  Linguagem Assembly, essencial para o funcionamento de qualquer computador clássico e utilizada na criação do ASM 24bits (mencionado acima). A linguagem Assembly, frequentemente abreviada como ``asm'', é uma linguagem de programação de baixo nível em que há uma correspondência muito forte entre as instruções da linguagem e as instruções do código de máquina\footnote{Na programação de computadores, o código de máquina, que consiste em instruções em linguagem de máquina, é uma linguagem de programação de baixo nível usada para controlar diretamente uma CPU. Cada instrução faz com que a CPU execute uma tarefa muito específica, como uma carga, um armazenamento, um salto ou uma operação ALU em uma ou mais unidades de dados nos registros ou memória da CPU.}, sendo altamente dependente do hardware que está sendo utilizado. Dessa forma, a asm é indispensável durante a primeira etapa do `boot', já que o hardware ainda não está configurado para o sistema operacional. 
 
 Assim, ao ligar qualquer computador clássico da atualidade, ele passará por algumas etapas importantes antes de poder ser utilizado por seu usuário final. Ao reiniciarmos um computador ele deverá carregar o sistema operacional, conceito explicado mais adiante, de qualquer variante (Mac, Windows, Linux, etc.), a partir de algum dispositivo de armazenamento permanente que está atualmente conectado ao computador: seja um cd, um disco rígido, um USB, etc. O ambiente pré-SO oferece poucos serviços de alto nível. Neste estágio, mesmo um sistema de arquivos simples, que possa ler e gravar arquivos lógicos em um disco, seria um luxo. Felizmente, temos disponível o Basic Input/Output Software (BIOS), uma coleção de rotinas de software que são carregadas inicialmente de um chip para a memória e inicializadas quando o computador é ligado. O BIOS fornece detecção automática e controle básico dos dispositivos essenciais do seu computador, como tela, teclado e discos rígidos. Depois que este conclui alguns testes de baixo nível do hardware, principalmente se a memória instalada está funcionando corretamente ou não, ele deve iniciar o sistema operacional já armazenado em um de seus dispositivos. No entanto, precisamos lembrar que o BIOS não pode simplesmente carregar um arquivo que represente seu sistema operacional a partir de um disco, pois o ele não tem noção de um sistema de arquivos. Este deve ler setores específicos de dados (geralmente 512 bytes de tamanho) de localizações físicas específicas dos dispositivos de disco, para carregar do sistema operacional.
 
+Toda essa arquitetura engenhosa de iniciação de um sistema operacional (SO) ocorre sobre um sistema eletrônico digital, que possui sua própria base numérica, tema para a próxima sessão.
+
 \subsection{Notação Númerica}
 
-É a partir desses conceitos abordados que se constitui a estrutura básica da computação clássica, que dependem da física clássica para operar. Estes são os computadores tradicionais que usamos em nosso dia-a-dia – sejam eles Apple, Samsung, Dell ou qualquer outro –, também classificados como computadores binários, pois processam as instruções a partir de números binários, compostos apenas pelos símbolos ``1'' e ``0'', ligado e desligado, respectivamente. Assim, julga-se importante e de larga relevância ao tema compreender essa representação numérica. Isso é o que diferencia o computador clássico do quântico, pois no quântico há o conceito de qubit (veja na página \pageref{qubits}).
+É a partir dos conceitos abordados até aqui que se constitui a arquitetura básica da computação clássica, que dependem da física clássica para operar. Estes são os computadores tradicionais que usamos em nosso dia-a-dia – sejam eles Apple, Samsung, Dell ou qualquer outro –, também classificados como computadores binários, pois processam as instruções a partir de números binários, compostos apenas pelos símbolos ``1'' e ``0'', ligado e desligado, respectivamente. Assim, julga-se importante e de larga relevância ao tema compreender essa representação numérica. Isso é o que diferencia o computador clássico do quântico, pois no quântico há o conceito de qubit (veja na página \pageref{qubits}).
 
 \subsubsection{Números binários}
 
-Números binários ou números em base 2 são compostos por apenas dois dígitos, \{0, 1\}. Dessa forma, seu funcionamento é similar ao sistema decimal, ou base 10, que são compostos por dez dígitos, \{0; 9\}. No sistema decimal, é simples contar até nove, porém não existe um símbolo ou dígito para representar o número dez, sendo então representado por dois dígitos, ``10'', sendo uma simples lógica de posicionamento. Mais uma vez, após o número ``99'', é necessário utilizar da mesma regra para representar o número cem, ``100''. Já em base 2, o número zero é representado pelo símbolo ``0'', e o número um por ``1''. O mesmo dilema é enfrentado ao chegar no próximo valor: dois. E então é usada a mesma lógica de posicionamento, em base dois. Desta forma, o número dois é representado por ``10'', o três por ``11'', quatro por ``100'' e assim por diante. Portanto, números binários podem se tornar longos e compostos por muitos dígitos que levam o nome de bits \cite{6}. É com base nos \label{bits}bits\footnote{A menor unidade de informação que pode ser armazenada ou transmitida na comunicação de dados.} ligados e desligados que o computador baseia a sua linguagem. Para transforma-lo em base dez é preciso avaliar o valor de cada bit de acordo com a sua posição. 
+Números binários ou números em base 2 são compostos por apenas dois dígitos, \{0, 1\}. Dessa forma, seu funcionamento é similar ao sistema decimal, ou base 10, que são compostos por dez dígitos, \{0; 9\}. No sistema decimal, é simples contar de zero até nove, porém não existe um símbolo ou dígito para representar o número dez, sendo então representado por dois dígitos, ``10'', sendo uma simples lógica de combinatória. Mais uma vez, após o número ``99'', é necessário utilizar da mesma regra para representar o número cem, ``100''. Já em base 2, o número zero é representado pelo símbolo ``0'', e o número um por ``1''. O mesmo dilema é enfrentado ao chegar no próximo valor: dois. E então é usada a mesma lógica de combinações, em base dois. Desta forma, o número dois é representado por ``10'', o três por ``11'', quatro por ``100'' e assim por diante. Portanto, números binários podem se tornar longos e compostos por muitos dígitos que levam o nome de bits \cite{6}. É com base nos \label{bits}bits\footnote{A menor unidade de informação que pode ser armazenada ou transmitida na comunicação de dados.} ligados e desligados que o computador baseia a sua linguagem. Para transforma-lo em base dez é preciso avaliar o valor de cada bit de acordo com a sua posição. 
 
 Exemplo: número binário $1011$:
 
@@ -171,7 +200,7 @@ Exemplo: número decimal $4392$:
 \[ 4392 = 4*10^3 + 3*10^2 + 9*10^1 + 2*10^0\]
 \[= nth\: bit * 10^{n-1}\]
 
-Essa regra se mantém verdadeira para qualquer base numérica.
+Essa regra se mantém verdadeira para outra base numérica.
 
 \[= nth\: bit * (base)^{n-1}\]
 
@@ -189,7 +218,7 @@ Nesse sentido, Ifrah explica que:
 
 \subsubsection{Números hexadecimais}
 
-Partindo dessa explicação, surge a ideia de números sendo representados a partir de 10 símbolos distintos: \{0; 9\}. Assim, o número decimal tem uma base de dez (ou seja, dez símbolos de dígitos distintos), já o número hexadecimal tem uma base de 16, por tanto, sendo necessário criar seis novos símbolos numéricos para possibilitar a contagem de 0 a 15 com apenas um símbolo. A maneira mais simples é usando algumas letras, como: 0,1,2, ... 8,9, a, b, c, d, e, f, em que, por exemplo, o símbolo `d', representaria uma contagem de 13.
+Partindo dessa explicação, surge o conceito de números sendo representados a partir de 10 símbolos distintos: \{0; 9\}. Assim, o número decimal tem uma base de dez (ou seja, dez símbolos de dígitos distintos), já o número hexadecimal tem uma base de 16, por tanto, sendo necessário criar seis novos símbolos numéricos para possibilitar a contagem de 0 a 15 com apenas um símbolo. A maneira mais simples é usando algumas letras, como: 0,1,2, ... 8,9, a, b, c, d, e, f, em que, por exemplo, o símbolo `d', representaria uma contagem de 13.
 
 Para distinguir entre hexadecimal e outros sistemas numéricos, costumamos usar o prefixo ``$0x$'', que é especialmente importante para indicar dígitos hexadecimais que podem não conter nenhum dos dígitos da letra, por exemplo: $0x50$ não é igual $(decimal) 50$ – $0x50$ é realmente $(decimal) 80$.
 
@@ -197,7 +226,7 @@ A questão é que um computador representa um número como uma sequência de bit
 
 \subsubsection{Bits}
 
-Para facilitar a conversa sobre o tamanho dos números com os quais estamos lidando foram adotadas nomenclaturas para séries de bits de certos comprimentos. As instruções na maioria dos computadores lidam com um mínimo de valores de 8 bits, que são denominados bytes. Outros agrupamentos são ``short'', ``int'' e ``long'', que geralmente representam valores de 16 bits, 32 bits e 64 bits, respectivamente. Também tem-se o termo ``word'', que é usado para descrever o tamanho da unidade máxima de processamento do modo atual da CPU: portanto, no modo real de 16 bits, a ``word'' se refere a um valor de 16 bits, já no modo protegido de 32 bits, uma ``word'' se refere a um valor de 32 bits e assim por diante.
+Para facilitar o compreensão sobre o tamanho dos números com os quais estamos lidando foram adotadas nomenclaturas para séries de bits de certos comprimentos. As instruções na maioria dos computadores lidam com um mínimo de valores de 8 bits, que são denominados bytes. Outros agrupamentos são ``short'', ``int'' e ``long'', que geralmente representam valores de 16 bits, 32 bits e 64 bits, respectivamente. Também tem-se o termo ``word'', que é usado para descrever o tamanho da unidade máxima de processamento do modo atual da CPU: portanto, no modo real de 16 bits, a ``word'' se refere a um valor de 16 bits, já no modo protegido de 32 bits, uma ``word'' se refere a um valor de 32 bits e assim por diante.
 
 Desse modo, pelo fato de as sequências de bits serem compridas é mais fácil convertê-las para notação hexadecimal do que para o sistema decimal natural, ilustrado na imagem abaixo. Assim, é possível quebrar a conversão em segmentos menores de 4 bits do número binário, em vez de tentar somar todos os bits componentes em um total geral, o que seria muito mais difícil para cadeias de bits maiores, como para: 16, 32, 64, etc. 
 
@@ -207,9 +236,9 @@ Desse modo, pelo fato de as sequências de bits serem compridas é mais fácil c
   \caption{\label{binary_conversions} Conversão de 1101111010110110 para decimal e hexadecimal} 
 \end{figure}
 
-Na computação clássica, atualmente, se utiliza bits que são representados por 0 e 1, ou seja, apenas dois estados são possíveis. Toda o arcabouço de lógica e aritmética se baseando nessa abordagem, logo, toda a arquitetura de computação também.
+Na computação clássica, atualmente, se utiliza bits que são representados por 0 e 1, ou seja, apenas dois estados são possíveis. Todo o arcabouço de lógica e aritmética se baseada nessa abordagem, logo, toda a arquitetura da computação também.
 
-Ao final do capítulo, em complementação ao estudo, a caminho encontrado para tornar toda essa arquitetura de computação mais utilizável foi a criada de sistemas de softwares supervisores do hardware, esses são os sistemas operacionais. Neste trabalho, um início de estudo e aprofundamento de sistemas operacionais foi começado, porém, por não ser o foco principal do estudo pode ser continuado num projeto futuro. O material desenvolvido pode ser encontrado no Apêndice A, página \pageref{apendeceA}.
+Em complementação ao estudo, a caminho encontrado para tornar toda essa arquitetura de computação mais utilizável foi a criada de sistemas de softwares supervisores do hardware, esses são os sistemas operacionais. Neste trabalho, um início de estudo e aprofundamento de sistemas operacionais foi começado, porém, por não ser o foco principal do estudo pode ser continuado num projeto futuro. O material desenvolvido pode ser encontrado no Apêndice A, página \pageref{apendeceA}.
 
 
 % Esse capítulo constituiu-se em apresentar conteúdos básicos e essenciais para possibilitar a compreensão do funcionamento de computadores clássicos. Conteúdos que foram compreendidos a partir do desenvolvimento de um \href{https://github.com/gzsig/zsig-OS}{sistema operacional} simples que passa por todas as etapas essenciais do processo de ``boot'' – ilustrado na figura a baixo – \textit{the-state-of-art} de computadores clássicos: ligando em `modo real de 16 bits', carregando o kernel\footnote{Uma parte integrante de qualquer sistema operacional. Que se constitui em um programa com controle completo sobre tudo no sistema.}, transferindo-se para `modo protegido de 32 bits' e `gerenciando interrupções'.
